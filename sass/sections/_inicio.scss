@@ -1,0 +1,8 @@
+@mixin inicio(){
+  @include box-layout();
+  background-color: $rosa;  
+    video{
+      background-color: aliceblue;
+      max-width: 90%;
+    }
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .contenedor_ppal {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  background-image: linear-gradient(to bottom, #fff, #BF8FC4);
+}
+body .contenedor_ppal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  padding: 0 2em;
+  border-bottom: 1px solid #BF8FC4;
+  backdrop-filter: blur(2.5px);
+}
+body .contenedor_ppal header img {
+  width: 10em;
+  cursor: pointer;
+}
+body .contenedor_ppal header .navbar {
+  background-color: orange;
+}
+body .contenedor_ppal main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 90%;
+  padding-top: 75px;
+}
+@media screen and (max-width: 976px) {
+  body .contenedor_ppal main {
+    background-color: chartreuse;
+  }
+}
+body .contenedor_ppal main .inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #BF8FC4;
+}
+body .contenedor_ppal main .inicio video {
+  background-color: aliceblue;
+  max-width: 90%;
+}
+body .contenedor_ppal main .institucion {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(154, 13, 164);
+}
+body .contenedor_ppal main .formacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(95, 144, 160);
+}
+body .contenedor_ppal main .galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(160, 141, 95);
+}
+body .contenedor_ppal main .contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(200, 86, 11);
+}
+body .contenedor_ppal footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,25 @@
+@mixin main(){
+    @include box-layout();
+    width: 90%;
+    padding-top: $alt-header;
+
+    // Mediaquerie
+    @include mobile(){
+        background-color: chartreuse
+    }
+    .inicio{
+      @include inicio();
+    }
+    .institucion{
+        @include institucion();
+    }
+    .formacion{
+        @include formacion();
+    }
+    .galeria{
+        @include galeria();
+    }
+    .contacto{
+        @include contacto();
+    }
+}

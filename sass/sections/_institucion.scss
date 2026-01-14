@@ -1,0 +1,4 @@
+@mixin institucion(){
+  @include box-layout();
+  background-color: rgb(154, 13, 164);  
+}

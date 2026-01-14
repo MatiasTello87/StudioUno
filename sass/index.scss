@@ -1,0 +1,65 @@
+
+
+//mediaqueries
+@import 'mixin/mediaqueries';
+// Header
+@import 'mixin/header';
+// Navbar
+@import 'mixin/navbar';
+// Footer
+@import 'mixin/footer';
+// Main
+@import 'mixin/main';
+// Propiedades de flex:
+// Display para encolumnar
+@import 'mixin/box-layout';
+// Display para header, footer, etc
+@import 'mixin/barra';
+
+
+// Sectiones
+@import 'sections/inicio';
+@import 'sections/institucion';
+@import 'sections/formacion';
+@import 'sections/galeria';
+@import 'sections/contacto';
+
+// Recursos
+@import 'recursos/colores';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    .contenedor_ppal{
+        min-height: 100dvh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        justify-items: center;
+        background-image: linear-gradient(to bottom, $blanco, $rosa);
+
+        header{
+            @include header();
+                img{
+                    width: 10em;
+                    cursor: pointer;
+                }
+            
+            .navbar{
+                @include navbar();
+
+            }
+        }
+        main{
+            @include main();
+        }
+        footer{
+            @include footer();
+        }
+    }
+}

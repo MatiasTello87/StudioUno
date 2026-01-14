@@ -1,0 +1,6 @@
+@mixin box-layout(){
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
