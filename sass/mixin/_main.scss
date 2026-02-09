@@ -1,7 +1,11 @@
 @mixin main(){
     @include box-layout();
-    width: 90%;
+    gap: 3em;
+    width: 100%;
+    padding: 1em;
     padding-top: $alt-header;
+    text-align: center;
+
 
     // Mediaquerie
     @include mobile(){
@@ -9,17 +13,18 @@
     }
     .inicio{
       @include inicio();
+      width: 100%;
     }
-    .institucion{
-        @include institucion();
+    .direccion{
+        @include direccion();
     }
-    .formacion{
-        @include formacion();
+    .docentes{
+        @include docentes();
     }
-    .galeria{
-        @include galeria();
+    .espacio{
+        @include espacio();
     }
-    .contacto{
-        @include contacto();
+    .form{
+        @include form();
     }
 }

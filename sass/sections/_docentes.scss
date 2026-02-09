@@ -1,0 +1,30 @@
+@mixin docentes(){
+  @include box-layout();
+   box-shadow: 1px 0px 7px  #00000052;
+   h2{
+     @include font-title-seccion();
+    }
+    .profe{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      .profe-info{
+        display: flex;
+        flex-direction: column;
+        padding-right: .5em;
+        gap: .7em;
+        p{
+          font-family: Roboto;
+          font-size: 10px;
+          text-align: start;
+          text-wrap: balance;
+        }
+        p:nth-child(1){
+          font-weight: 800;
+        }
+
+    }
+      
+  }
+}

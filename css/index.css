@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,80 +6,235 @@
 }
 
 body .contenedor_ppal {
+  max-width: 100%;
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
-  background-image: linear-gradient(to bottom, #fff, #BF8FC4);
+  background-image: linear-gradient(to bottom, #ffffff, #BF8FC4);
 }
 body .contenedor_ppal header {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
-  height: 75px;
+  height: 48px;
   padding: 0 2em;
-  border-bottom: 1px solid #BF8FC4;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
   backdrop-filter: blur(2.5px);
+}
+body .contenedor_ppal header img {
+  max-width: 5em;
 }
 body .contenedor_ppal header img {
   width: 10em;
   cursor: pointer;
 }
-body .contenedor_ppal header .navbar {
-  background-color: orange;
-}
 body .contenedor_ppal main {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  width: 90%;
-  padding-top: 75px;
+  gap: 3em;
+  width: 100%;
+  padding: 1em;
+  padding-top: 48px;
+  text-align: center;
 }
-@media screen and (max-width: 976px) {
+@media screen and (min-width: 530px) {
   body .contenedor_ppal main {
     background-color: chartreuse;
   }
 }
 body .contenedor_ppal main .inicio {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  background-color: #BF8FC4;
+  padding: 2em 1em;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+  width: 100%;
+}
+body .contenedor_ppal main .inicio h1 {
+  font-family: Playfair;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 90%;
+  font-size: 1.5em;
+}
+body .contenedor_ppal main .inicio p {
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 18px;
+  font-size: 0.8em;
 }
 body .contenedor_ppal main .inicio video {
   background-color: aliceblue;
-  max-width: 90%;
 }
-body .contenedor_ppal main .institucion {
+body .contenedor_ppal main .direccion {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  background-color: rgb(154, 13, 164);
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
 }
-body .contenedor_ppal main .formacion {
+body .contenedor_ppal main .direccion h2 {
+  font-family: Plafair;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50%;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+body .contenedor_ppal main .direccion p {
+  font-family: Plafair;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+body .contenedor_ppal main .direccion img {
+  max-width: 100%;
+  height: auto;
+}
+body .contenedor_ppal main .docentes {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  background-color: rgb(95, 144, 160);
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
 }
-body .contenedor_ppal main .galeria {
+body .contenedor_ppal main .docentes h2 {
+  font-family: Plafair;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50%;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+body .contenedor_ppal main .docentes .profe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body .contenedor_ppal main .docentes .profe .profe-info {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  background-color: rgb(160, 141, 95);
+  padding-right: 0.5em;
+  gap: 0.7em;
 }
-body .contenedor_ppal main .contacto {
+body .contenedor_ppal main .docentes .profe .profe-info p {
+  font-family: Roboto;
+  font-size: 10px;
+  text-align: start;
+  text-wrap: balance;
+}
+body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(1) {
+  font-weight: 800;
+}
+body .contenedor_ppal main .espacio {
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+}
+body .contenedor_ppal main .form {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  background-color: rgb(200, 86, 11);
+  align-items: center;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+}
+body .contenedor_ppal main .form .form_title {
+  text-align: center;
+}
+body .contenedor_ppal main .form .form_title h3 {
+  font-style: italic;
+}
+body .contenedor_ppal main .form .form_title p {
+  color: blue;
+}
+body .contenedor_ppal main .form .text_inputs {
+  max-width: 100%;
+  display: flex;
+  gap: 0.5em;
+}
+body .contenedor_ppal main .form .text_inputs textarea {
+  width: calc(50% - 4px);
+  padding: 0.3em 1em;
+  border-radius: 1em;
+  border: none;
+  font-size: 0.5em;
+}
+body .contenedor_ppal main .form .text_inputs .inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  width: calc(50% - 4px);
+  gap: 0.5em;
+  align-items: center;
+}
+body .contenedor_ppal main .form .text_inputs .inputs input {
+  max-width: 100%;
+  padding: 0.3em 1em;
+  border: none;
+  border-radius: 1em;
+  font-size: 0.5em;
+}
+body .contenedor_ppal main .form .text_inputs .inputs button {
+  font-size: 0.5em;
+  padding: 0.5em;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 30px;
 }
 body .contenedor_ppal footer {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  align-items: start;
+  padding: 2em;
+  gap: 1em;
+  color: #ffffff;
+  background-color: #000000;
+}
+body .contenedor_ppal footer .logos_footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
+  width: 100%;
+}
+body .contenedor_ppal footer .logos_footer .logo_footer {
+  color: cadetblue;
+}
+body .contenedor_ppal footer .logos_footer .info_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+body .contenedor_ppal footer .logos_footer .info_footer .redes_footer {
+  display: flex;
+  gap: 0.5em;
+}
+body .contenedor_ppal footer .logos_footer .info_footer p {
+  font-size: 6px;
+}
+body .contenedor_ppal footer .secciones_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
 }
 
 /*# sourceMappingURL=index.css.map */

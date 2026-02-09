@@ -19,13 +19,15 @@
 
 // Sectiones
 @import 'sections/inicio';
-@import 'sections/institucion';
-@import 'sections/formacion';
-@import 'sections/galeria';
-@import 'sections/contacto';
+@import 'sections/direccion';
+@import 'sections/docentes';
+@import 'sections/espacio';
+@import 'sections/form';
 
 // Recursos
 @import 'recursos/colores';
+@import 'recursos/fonts';
+
 
 
 
@@ -33,10 +35,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // outline: 1px solid red !important;
 }
 
 body{
     .contenedor_ppal{
+        max-width: 100%;
         min-height: 100dvh;
         display: grid;
         grid-template-rows: auto 1fr auto;

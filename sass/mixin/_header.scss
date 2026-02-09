@@ -1,17 +1,21 @@
-$alt-header: 75px;
+$alt-header: 48px;
 //utilizo una variable para usar como referencia para el main
 @mixin header(){
    @include barra();
    position: fixed;
-   width: 100%;
+   // width: 100%;
    height: $alt-header;
    padding: 0 2em;
-   
-   border-bottom: 1px solid $rosa;
+   // background-color: aquamarine;
+
+   box-shadow: 1px 0px 7px  #00000052;
    //blur
     backdrop-filter: blur(2.5px);
 
    // Mediaquerie
+   img{
+      max-width: 5em;
+   }
 
   
 }

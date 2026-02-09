@@ -1,8 +1,15 @@
 @mixin inicio(){
   @include box-layout();
-  background-color: $rosa;  
+  padding: 2em 1em;
+  box-shadow: 1px 0px 7px  #00000052;
+  h1{
+    @include font-title();
+  }
+  p{
+    @include font-parrafo();
+  }  
     video{
       background-color: aliceblue;
-      max-width: 90%;
+      // max-width: 90%;
     }
 }

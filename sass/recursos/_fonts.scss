@@ -1,0 +1,38 @@
+
+// Playfair
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin font-title(){
+    font-family: Playfair;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 90%;
+    font-size: 1.5em;
+}
+
+// Roboto
+
+
+@mixin font-parrafo(){
+    font-family: Roboto;
+    // font-style: ;
+    font-weight: 300;
+    line-height: 18px;
+    font-size: .8em;
+}
+
+@mixin font-title-seccion(){
+    font-family: Plafair;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50%;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+}
+@mixin font-parr-seccion(){
+    font-family: Plafair;
+    font-style: italic;
+    font-weight: 400;
+    font-size: .8em;
+}

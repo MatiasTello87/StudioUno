@@ -1,0 +1,15 @@
+@mixin direccion(){
+  @include box-layout();
+  box-shadow: 1px 0px 7px  #00000052;
+  h2{
+    @include font-title-seccion();
+  }
+  p{
+    @include font-parr-seccion();
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+   
+}
