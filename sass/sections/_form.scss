@@ -31,7 +31,7 @@
       padding: .3em 1em;
       border-radius: 1em;
       border: none;
-      font-size: .5em;
+      // font-size: .7em;
 
     }
     .inputs{
@@ -43,10 +43,18 @@
       align-items: center;
       input{
         width: 100%;
-        padding: 0.5em 1em;
+        padding: 0.8em 1em;
         border: none;
         border-radius: 1em;
         font-size: 0.5em;
+      }
+      // Aplica a lo do elemento
+      input::placeholder, 
+      textarea::placeholder {
+        color: #888;
+        font-style: italic;    
+        font-family: 'Arial', sans-serif;
+        opacity: 1;           /* Importante para Firefox, que le baja la opacidad por defecto */
       }
       button{
         font-family: Roboto;

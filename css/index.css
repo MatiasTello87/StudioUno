@@ -169,7 +169,6 @@ body .contenedor_ppal main .form .text_inputs textarea {
   padding: 0.3em 1em;
   border-radius: 1em;
   border: none;
-  font-size: 0.5em;
 }
 body .contenedor_ppal main .form .text_inputs .inputs {
   display: flex;
@@ -180,10 +179,17 @@ body .contenedor_ppal main .form .text_inputs .inputs {
 }
 body .contenedor_ppal main .form .text_inputs .inputs input {
   width: 100%;
-  padding: 0.5em 1em;
+  padding: 0.8em 1em;
   border: none;
   border-radius: 1em;
   font-size: 0.5em;
+}
+body .contenedor_ppal main .form .text_inputs .inputs input::placeholder,
+body .contenedor_ppal main .form .text_inputs .inputs textarea::placeholder {
+  color: #888;
+  font-style: italic;
+  font-family: "Arial", sans-serif;
+  opacity: 1; /* Importante para Firefox, que le baja la opacidad por defecto */
 }
 body .contenedor_ppal main .form .text_inputs .inputs button {
   font-family: Roboto;
@@ -226,7 +232,7 @@ body .contenedor_ppal footer .logos_footer .info_footer .redes_footer {
   gap: 0.5em;
 }
 body .contenedor_ppal footer .logos_footer .info_footer p {
-  font-size: 6px;
+  font-size: 0.5em;
 }
 body .contenedor_ppal footer .secciones_footer {
   display: flex;
