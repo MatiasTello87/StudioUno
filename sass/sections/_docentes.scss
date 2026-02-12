@@ -1,6 +1,8 @@
 @mixin docentes(){
   @include box-layout();
-   box-shadow: 1px 0px 7px  #00000052;
+  padding: 2em 0;
+
+  //  box-shadow: 1px 0px 7px  #00000052;
    h2{
      @include font-title-seccion();
     }

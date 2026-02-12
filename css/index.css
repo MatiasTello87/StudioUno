@@ -37,7 +37,7 @@ body .contenedor_ppal main {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  gap: 3em;
+  gap: 1em;
   width: 100%;
   padding: 1em;
   padding-top: 48px;
@@ -55,7 +55,6 @@ body .contenedor_ppal main .inicio {
   flex-direction: column;
   gap: 1em;
   padding: 2em 1em;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
   width: 100%;
 }
 body .contenedor_ppal main .inicio h1 {
@@ -80,7 +79,7 @@ body .contenedor_ppal main .direccion {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+  padding: 2em 1em;
 }
 body .contenedor_ppal main .direccion h2 {
   font-family: Plafair;
@@ -106,7 +105,7 @@ body .contenedor_ppal main .docentes {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+  padding: 2em 0;
 }
 body .contenedor_ppal main .docentes h2 {
   font-family: Plafair;
@@ -137,9 +136,6 @@ body .contenedor_ppal main .docentes .profe .profe-info p {
 body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(1) {
   font-weight: 800;
 }
-body .contenedor_ppal main .espacio {
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
-}
 body .contenedor_ppal main .form {
   width: 100%;
   display: flex;
@@ -147,21 +143,26 @@ body .contenedor_ppal main .form {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+  padding: 2em 0;
 }
 body .contenedor_ppal main .form .form_title {
   text-align: center;
 }
 body .contenedor_ppal main .form .form_title h3 {
   font-style: italic;
+  font-family: Playfair;
+  font-weight: 400;
+  font-size: 1.3em;
 }
 body .contenedor_ppal main .form .form_title p {
-  color: blue;
+  font-family: Roboto;
+  font-size: 0.5em;
+  font-style: italic;
 }
 body .contenedor_ppal main .form .text_inputs {
-  max-width: 100%;
+  width: 90%;
   display: flex;
-  gap: 0.5em;
+  gap: 0.7em;
 }
 body .contenedor_ppal main .form .text_inputs textarea {
   width: calc(50% - 4px);
@@ -171,25 +172,24 @@ body .contenedor_ppal main .form .text_inputs textarea {
   font-size: 0.5em;
 }
 body .contenedor_ppal main .form .text_inputs .inputs {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 1em;
   width: calc(50% - 4px);
   gap: 0.5em;
   align-items: center;
 }
 body .contenedor_ppal main .form .text_inputs .inputs input {
-  max-width: 100%;
-  padding: 0.3em 1em;
+  width: 100%;
+  padding: 0.5em 1em;
   border: none;
   border-radius: 1em;
   font-size: 0.5em;
 }
 body .contenedor_ppal main .form .text_inputs .inputs button {
+  font-family: Roboto;
+  font-weight: 400;
   font-size: 0.5em;
-  padding: 0.5em;
+  padding: 0.5em 4em;
   background-color: #000000;
   color: #ffffff;
   cursor: pointer;

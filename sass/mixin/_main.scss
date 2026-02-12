@@ -1,6 +1,6 @@
 @mixin main(){
     @include box-layout();
-    gap: 3em;
+    gap: 1em;
     width: 100%;
     padding: 1em;
     padding-top: $alt-header;
@@ -20,9 +20,6 @@
     }
     .docentes{
         @include docentes();
-    }
-    .espacio{
-        @include espacio();
     }
     .form{
         @include form();

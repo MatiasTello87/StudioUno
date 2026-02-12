@@ -1,6 +1,7 @@
 @mixin direccion(){
   @include box-layout();
-  box-shadow: 1px 0px 7px  #00000052;
+  padding: 2em 1em;
+  // box-shadow: 1px 0px 7px  #00000052;
   h2{
     @include font-title-seccion();
   }
