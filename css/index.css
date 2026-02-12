@@ -216,9 +216,6 @@ body .contenedor_ppal footer .logos_footer {
   gap: 2em;
   width: 100%;
 }
-body .contenedor_ppal footer .logos_footer .logo_footer {
-  color: cadetblue;
-}
 body .contenedor_ppal footer .logos_footer .info_footer {
   display: flex;
   flex-direction: column;
@@ -234,7 +231,12 @@ body .contenedor_ppal footer .logos_footer .info_footer p {
 body .contenedor_ppal footer .secciones_footer {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  gap: 0.1em;
+}
+body .contenedor_ppal footer .secciones_footer p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 0.5em;
 }
 
 /*# sourceMappingURL=index.css.map */
