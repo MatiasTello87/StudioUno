@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -176,10 +177,12 @@ body .contenedor_ppal main .form .text_inputs .inputs {
   width: calc(50% - 4px);
   gap: 0.5em;
   align-items: center;
+  /* Hace que el placeholder sea más claro 
+  cuando el usuario hace clic */
 }
 body .contenedor_ppal main .form .text_inputs .inputs input {
   width: 100%;
-  padding: 0.8em 1em;
+  padding: 1em;
   border: none;
   border-radius: 1em;
   font-size: 0.5em;
@@ -190,6 +193,11 @@ body .contenedor_ppal main .form .text_inputs .inputs textarea::placeholder {
   font-style: italic;
   font-family: "Arial", sans-serif;
   opacity: 1; /* Importante para Firefox, que le baja la opacidad por defecto */
+}
+body .contenedor_ppal main .form .text_inputs .inputs textarea:focus::placeholder,
+body .contenedor_ppal main .form .text_inputs .inputs input:focus::placeholder {
+  color: transparent;
+  transition: color 0.3s ease;
 }
 body .contenedor_ppal main .form .text_inputs .inputs button {
   font-family: Roboto;

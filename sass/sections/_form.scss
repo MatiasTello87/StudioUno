@@ -43,7 +43,7 @@
       align-items: center;
       input{
         width: 100%;
-        padding: 0.8em 1em;
+        padding: 1em;
         border: none;
         border-radius: 1em;
         font-size: 0.5em;
@@ -55,6 +55,13 @@
         font-style: italic;    
         font-family: 'Arial', sans-serif;
         opacity: 1;           /* Importante para Firefox, que le baja la opacidad por defecto */
+      }
+      /* Hace que el placeholder sea más claro 
+      cuando el usuario hace clic */
+      textarea:focus::placeholder,
+      input:focus::placeholder {
+        color: transparent;
+        transition: color 0.3s ease;
       }
       button{
         font-family: Roboto;
