@@ -32,6 +32,42 @@ body .contenedor_ppal header img {
   width: 10em;
   cursor: pointer;
 }
+body .contenedor_ppal header .navbar .nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  right: -100%;
+  text-align: end;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.3215686275);
+  position: fixed;
+  padding: 1.5em 2.5em;
+  top: 48px;
+  text-decoration: none;
+  transition: right 0.4s ease;
+}
+body .contenedor_ppal header .navbar .nav-links li {
+  list-style: none;
+}
+body .contenedor_ppal header .navbar .nav-links li a {
+  text-decoration: none;
+  color: #000000;
+}
+body .contenedor_ppal header .navbar .nav-links.active {
+  right: 0;
+}
+body .contenedor_ppal header .navbar button {
+  font-family: Roboto;
+  background-color: transparent;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+body .contenedor_ppal header .navbar button span {
+  font-family: Roboto;
+  font-size: 0.8em;
+}
 body .contenedor_ppal main {
   width: 100%;
   display: flex;
@@ -46,7 +82,7 @@ body .contenedor_ppal main {
 }
 @media screen and (min-width: 530px) {
   body .contenedor_ppal main {
-    background-color: chartreuse;
+    background-color: rgb(114, 160, 209);
   }
 }
 body .contenedor_ppal main .inicio {

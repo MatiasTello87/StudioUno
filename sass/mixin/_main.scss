@@ -9,7 +9,7 @@
 
     // Mediaquerie
     @include mobile(){
-        background-color: chartreuse
+        background-color: rgb(114, 160, 209)
     }
     .inicio{
       @include inicio();
