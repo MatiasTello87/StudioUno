@@ -9,17 +9,13 @@
         right: 0;
         position: fixed;
         text-align: end;
-        // background-color: #ffffffc6;
-        // background-image: radial-gradient(to left, $blanco, #ffffff00);
-        background: radial-gradient(circle at top right, $blanco, #ffffffc1,  #ffffff00);
+        background: radial-gradient(circle at top right, $blanco, #ffffffed,  #ffffff00);
         border-bottom: 1px inset $rosa;
-        box-shadow: 1px 0px 7px  #00000025;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        padding: 1.5em 2.5em;
+        padding: 2em 2.5em;
         text-decoration: none;
         transition: top 0.4s ease;
-        z-index: -5;
         li{
             list-style: none;
             a{
@@ -30,6 +26,7 @@
     }
     .nav-links.active {
         top: 3.1em ;
+        // z-index: -5;
         opacity: 1;
     }
     button{

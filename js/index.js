@@ -7,6 +7,7 @@ const body = document.querySelector('body');
 
 btnMenu.addEventListener('click', ()=>{
     navMenu.classList.toggle('active');
+    console.log("aoa");
     // Opcional: Cambiar el icono del botón
   if (navMenu.classList.contains('active')) {
     navspan.innerHTML = '✕'; // Icono de cerrar
