@@ -12,7 +12,7 @@ btnMenu.addEventListener('click', ()=>{
   if (navMenu.classList.contains('active')) {
     navspan.innerHTML = '✕'; // Icono de cerrar
   } else {
-    navspan.innerHTML = 'Menú';
+    navspan.innerHTML = '☰';
   };
 
   // Lógica para anular el scroll
