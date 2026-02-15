@@ -8,9 +8,11 @@ $alt-header: 48px;
    padding: 0 2em;
    // background-color: aquamarine;
 
-   box-shadow: 1px 0px 7px  #00000052;
+   box-shadow: 1px 0px 7px  #00000092;
    //blur
-    backdrop-filter: blur(2.5px);
+   backdrop-filter: blur(2.5px);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 
    // Mediaquerie
    img{

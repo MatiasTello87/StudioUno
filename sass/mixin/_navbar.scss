@@ -1,19 +1,25 @@
 @mixin navbar(){
     .nav-links{
         width: 100%;
-        // height: 100dvh;
+        opacity: 0;
         display: flex;
         flex-direction: column;
         gap: 0.3em;
-        right: -100%;
-        text-align: end;
-        background-color: $blanco;
-        box-shadow: 1px 0px 7px  #00000052;
+        top: -300%;
+        right: 0;
         position: fixed;
+        text-align: end;
+        // background-color: #ffffffc6;
+        // background-image: radial-gradient(to left, $blanco, #ffffff00);
+        background: radial-gradient(circle at top right, $blanco, #ffffffc1,  #ffffff00);
+        border-bottom: 1px inset $rosa;
+        box-shadow: 1px 0px 7px  #00000025;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         padding: 1.5em 2.5em;
-        top: $alt-header;
         text-decoration: none;
-        transition: right 0.4s ease;
+        transition: top 0.4s ease;
+        z-index: -5;
         li{
             list-style: none;
             a{
@@ -23,7 +29,8 @@
         }
     }
     .nav-links.active {
-        right: 0;
+        top: 3.1em ;
+        opacity: 1;
     }
     button{
         font-family: Roboto;
