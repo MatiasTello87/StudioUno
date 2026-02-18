@@ -45,7 +45,7 @@ body .contenedor_ppal header .navbar span {
 }
 body .contenedor_ppal header .navbar .contain-navbar {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   opacity: 0;
   display: flex;
   justify-content: space-between;
@@ -54,8 +54,9 @@ body .contenedor_ppal header .navbar .contain-navbar {
   top: 0;
   position: fixed;
   text-align: end;
-  background-color: #ffffff;
-  padding: 2em 2.5em;
+  background-color: #BF8FC4;
+  color: #000000;
+  padding: 1em 2.5em;
   text-decoration: none;
   transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
   pointer-events: none;
