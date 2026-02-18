@@ -4,10 +4,8 @@
         border: none;
         background-color: transparent;
         color: #4c4c4c;
-
     }
     span{
-        // color: red;
         font-size: 1.2em;
     }
     .contain-navbar{
@@ -23,7 +21,7 @@
         position: fixed;
         text-align: end;
         background-color: $blanco;
-        padding: 1em 2.5em;
+        padding: 3em 2.5em;
         text-decoration: none;
         transition: right 0.4s ease;
         .info-navbar{
@@ -36,11 +34,10 @@
             }
             .icons-navbar{
                 display: flex;
-                gap: .1em;
+                gap: .3em;
                 align-items: center;
                 img{
-                    width: .7em;
-                    // color: $blanco;
+                    width: 1em;
                 }
             }
             .p-navbar{
