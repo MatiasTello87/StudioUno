@@ -29,7 +29,7 @@
             text-align: start;
             display: flex;
             flex-direction: column;
-            gap: .5em;
+            gap: 1em;
             .logo-navbar{
                 max-width: 75%;
             }
@@ -43,19 +43,20 @@
             }
             .p-navbar{
                 p{
-                    font-size: .6em;
+                    font-size: .7em;
                 }
             }
         }
         .nav-links{
             display: flex;
             flex-direction: column;
-            gap: .5em;
+            gap: 1em;
             li{
                 list-style: none;
                 line-height: 1em;
                 a{
                     text-decoration: none;
+                    font-size: 1.2em;
                     font-family: Roboto;
                     font-weight: 400;
                     color: $negro;
