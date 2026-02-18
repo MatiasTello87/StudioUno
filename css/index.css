@@ -22,6 +22,7 @@ body .contenedor_ppal header {
   position: fixed;
   height: 48px;
   padding: 0 2em;
+  background-color: rgba(255, 255, 255, 0.5411764706);
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.2352941176);
   backdrop-filter: blur(2.5px);
   border-bottom-left-radius: 10px;
@@ -34,44 +35,80 @@ body .contenedor_ppal header img {
   width: 10em;
   cursor: pointer;
 }
-body .contenedor_ppal header .navbar .nav-links {
+body .contenedor_ppal header .navbar .nav-toggle {
+  border: none;
+  background-color: transparent;
+  color: #4c4c4c;
+}
+body .contenedor_ppal header .navbar span {
+  font-size: 1.2em;
+}
+body .contenedor_ppal header .navbar .contain-navbar {
   width: 100%;
   opacity: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 0.3em;
   right: -100%;
+  top: 0;
   position: fixed;
   text-align: end;
   background-color: #ffffff;
-  background-image: linear-gradient(to left, #ffffff, rgba(0, 0, 255, 0));
-  padding: 2em 2.5em;
+  padding: 1em 2.5em;
   text-decoration: none;
   transition: right 0.4s ease;
 }
-body .contenedor_ppal header .navbar .nav-links li {
-  list-style: none;
+body .contenedor_ppal header .navbar .contain-navbar .info-navbar {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
 }
-body .contenedor_ppal header .navbar .nav-links li a {
+body .contenedor_ppal header .navbar .contain-navbar .info-navbar .logo-navbar {
+  max-width: 75%;
+}
+body .contenedor_ppal header .navbar .contain-navbar .info-navbar .icons-navbar {
+  display: flex;
+  gap: 0.1em;
+  align-items: center;
+}
+body .contenedor_ppal header .navbar .contain-navbar .info-navbar .icons-navbar img {
+  width: 0.7em;
+}
+body .contenedor_ppal header .navbar .contain-navbar .info-navbar .p-navbar p {
+  font-size: 0.5em;
+}
+body .contenedor_ppal header .navbar .contain-navbar .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+body .contenedor_ppal header .navbar .contain-navbar .nav-links li {
+  list-style: none;
+  line-height: 1em;
+}
+body .contenedor_ppal header .navbar .contain-navbar .nav-links li a {
+  font-size: smaller;
   text-decoration: none;
   font-family: Roboto;
   font-weight: 400;
   color: #000000;
 }
-body .contenedor_ppal header .navbar .nav-links.active {
-  right: 0;
-  opacity: 1;
-}
-body .contenedor_ppal header .navbar button {
+body .contenedor_ppal header .navbar .contain-navbar .nav-links li button {
   font-family: Roboto;
+  margin-top: 1em;
+  color: #4c4c4c;
   background-color: transparent;
   border: none;
-  padding: 0.5em 1em;
+  box-shadow: 0.8px 0.5px 5px rgba(120, 120, 120, 0.4745098039);
+  border-radius: 50%;
+  padding: 0.1em 0.5em;
   cursor: pointer;
 }
-body .contenedor_ppal header .navbar button span {
-  font-family: Roboto;
-  font-size: 0.8em;
+body .contenedor_ppal header .navbar .contain-navbar.active {
+  right: 0;
+  opacity: 1;
 }
 body .contenedor_ppal main {
   width: 100%;
@@ -281,17 +318,19 @@ body .contenedor_ppal footer .logos_footer .info_footer .redes_footer {
   gap: 0.5em;
 }
 body .contenedor_ppal footer .logos_footer .info_footer p {
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 body .contenedor_ppal footer .secciones_footer {
   display: flex;
   flex-direction: column;
   gap: 0.1em;
 }
-body .contenedor_ppal footer .secciones_footer p {
+body .contenedor_ppal footer .secciones_footer a {
+  color: #ffffff;
+  text-decoration: none;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=index.css.map */

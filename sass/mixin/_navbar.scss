@@ -1,43 +1,89 @@
 @mixin navbar(){
-    .nav-links{
+    // display: flex;
+    .nav-toggle{
+        border: none;
+        background-color: transparent;
+        color: #4c4c4c;
+
+    }
+    span{
+        // color: red;
+        font-size: 1.2em;
+    }
+    .contain-navbar{
         width: 100%;
         opacity: 0;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         gap: 0.3em;
         right: -100%;
+        top: 0;
         // right: 0;
         position: fixed;
         text-align: end;
         background-color: $blanco;
-        background-image: linear-gradient(to left, $blanco, rgba(0, 0, 255, 0));
-        padding: 2em 2.5em;
+        padding: 1em 2.5em;
         text-decoration: none;
         transition: right 0.4s ease;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                font-family: Roboto;
-                font-weight: 400;
-                color: $negro;
+        .info-navbar{
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            gap: .2em;
+            .logo-navbar{
+                max-width: 75%;
+            }
+            .icons-navbar{
+                display: flex;
+                gap: .1em;
+                align-items: center;
+                img{
+                    width: .7em;
+                    // color: $blanco;
+                }
+            }
+            .p-navbar{
+                p{
+                    font-size: .5em;
+                }
             }
         }
+        .nav-links{
+            display: flex;
+            flex-direction: column;
+            gap: .1em;
+            li{
+                list-style: none;
+                line-height: 1em;
+                a{
+                    font-size: smaller;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    color: $negro;
+                }
+                button{
+                    font-family: Roboto;
+                    margin-top: 1em;
+                    color: #4c4c4c;
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: .8px .5px 5px #78787879;
+                    border-radius: 50%;
+                    padding: .1em .5em;
+                    cursor: pointer;
+                }
+               
+            }
+        }
+    
     }
-    .nav-links.active {
+    .contain-navbar.active {
         right:0 ;
         // z-index: -5;
         opacity: 1;
     }
-    button{
-        font-family: Roboto;
-        background-color: transparent;
-        border: none;
-        padding: .5em 1em;
-        cursor: pointer;
-        span{
-            font-family: Roboto;
-            font-size: .8em;
-        }
-    }
+  
+    
 }

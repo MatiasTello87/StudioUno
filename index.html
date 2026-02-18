@@ -13,30 +13,46 @@
             <a href="index.html"><img src="./assets/icons/Recurso 3LOGOTIPO NEGRO sin fondo.png" alt="logo">
             </a>
             <nav class="navbar">
-                <button class="nav-toggle" id="btn-menu"><span id="nav-span">☰</span>
-                </button>
-                <ul class="nav-links" id="nav-menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Dirección</a></li>
-                    <li><a href="#">Formulario</a></li>
-                    <li><a href="#">Inicio</a></li>
-                </ul>
-                
+                    <button class="nav-toggle" id="btn-hamb"><span id="nav-span">☰</span>
+                    </button>
+                    <div class="contain-navbar" id="nav-menu">
+                        <div class="info-navbar">
+                            <img class="logo-navbar" src="./assets/icons/Recurso 3LOGOTIPO NEGRO sin fondo.png" alt="">
+                            <div class="p-navbar">
+                                <p>Santiago del Estero Sur 135</p>
+                                <p>San Juan</p>
+                                <p>0264 432-0776</p>
+                                <p>studiounosecretaria@gmail.com</p>
+                            </div>
+                            <div class="icons-navbar">
+                                <a href="https://www.facebook.com/danzas.studiouno1/" target="_blank"><img src="./assets/icons/fb-lila.svg" alt="Enlace a facebook"></a>
+                                <a href="https://www.instagram.com/studiouno_1/" target="_blank"><img src="./assets/icons/ig-lila.svg" alt="Enlace a instagram"></a>
+                            </div>
+                            
+                        </div>
+                        <ul class="nav-links" >
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#direccion">Dirección Artística</a></li>
+                            <li><a href="#docentes">Docentes</a></li>
+                            <li><a href="#form">Contacto</a></li>
+                            <li><button id="btn-close">x</button></li>
+                        </ul>
+                    </div>
             </nav>
         </header>
         <main>
-            <section class="inicio">
+            <section class="inicio" id="inicio">
                 <h1>La mejor manera de crecer en el arte de la danza</h1>
                 <!-- <img src="./assets/img/fotos.svg" alt="foto 1"> -->
                <p>STUDIO UNO es un instituto de formación en danza clásica y contemporánea con una trayectoria ininterrumpida desde el año 1985. A lo largo de más de 40 años, la institución se ha consolidado como un espacio de referencia en la enseñanza de la danza. Formando artistas comprometidos con el movimiento, la sensibilidad y la excelencia. El estudio fue fundado por Alejandra Lloveras y Celina Castro, quienes continúan ejerciendo la dirección hasta la actualidad. Sosteniendo el proyecto pedagógico y artístico que dio origen a la institución. Durante estas cuatro décadas, STUDIO UNO ha formado a numerosos bailarines. Que continuaron su desarrollo artístico y profesional tanto a nivel nacional como internacional. De esta institución surgieron 30 promociones de egresados de maestros en danza. Con un total aproximado de 253 alumnos, reflejo de un trabajo constante y comprometido con la formación integral.</p>
             </section>
-            <section class="direccion">
+            <section class="direccion" id="direccion">
                 <h2>Direccion Artística</h2>
                 <p>La propuesta educativa de STUDIO UNO se basa en una formación sólida en técnica clásica y contemporánea, integrada con el desarrollo artístico, expresivo y humano de cada alumno. El proceso de enseñanza prioriza el trabajo consciente, la disciplina y el respeto por el cuerpo, acompañando a cada estudiante en su propio camino de aprendizaje.</p>
                 <img src="./assets/img/profe/ale-direc.svg" alt="">
                 <img src="./assets/img/profe/celi-direc.svg" alt="">
             </section>
-            <section class="docentes">
+            <section class="docentes" id="docentes">
                 <h2>Nuestro equipo docente</h2>
                 <div class="profe">
                     <img src="./assets/img/profe/cami.svg" alt="Camila Quiroga">
@@ -90,7 +106,7 @@
                     
                 </div>
             </section>
-            <section class="form">
+            <section class="form" id="form">
                 <div class="form_title">
                     <h3>¿Querés formar parte de Studio Uno?</h3>
                     <p>Contactanos a través de nuestras redes sociales o dejanos tu mensaje</p>
@@ -126,15 +142,10 @@
                 </div>
             </div>
             <div class="secciones_footer">
-                <p>Inicio</p>
-                <p>Historia</p>
-                <p>Valores</p>
-                <p>Misión</p>
-                <p>Dirección Artística</p>
-                <p>Formación</p>
-                <p>Equipo Docente</p>
-                <p>Instalaciones</p>
-                <p>Contacto</p>
+               <a href="#inicio">Inicio</a>
+               <a href="#direccion">Dirección Artística</a>
+               <a href="#docentes">Equipo Docente</a>
+               <a href="#form">Contacto</a>
             </div>
         </footer>
     </div>
