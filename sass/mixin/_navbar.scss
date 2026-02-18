@@ -10,7 +10,7 @@
     }
     .contain-navbar{
         width: 100%;
-        height: 65vh;
+        height: 50vh;
         opacity: 0;
         display: flex;
         justify-content: space-between;
@@ -29,7 +29,7 @@
             text-align: start;
             display: flex;
             flex-direction: column;
-            gap: .2em;
+            gap: .5em;
             .logo-navbar{
                 max-width: 75%;
             }
@@ -50,7 +50,7 @@
         .nav-links{
             display: flex;
             flex-direction: column;
-            gap: .1em;
+            gap: .5em;
             li{
                 list-style: none;
                 line-height: 1em;
