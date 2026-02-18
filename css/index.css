@@ -83,7 +83,7 @@ body .contenedor_ppal header .navbar .contain-navbar .info-navbar .p-navbar p {
 body .contenedor_ppal header .navbar .contain-navbar .nav-links {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
 }
 body .contenedor_ppal header .navbar .contain-navbar .nav-links li {
   list-style: none;
@@ -91,7 +91,7 @@ body .contenedor_ppal header .navbar .contain-navbar .nav-links li {
 }
 body .contenedor_ppal header .navbar .contain-navbar .nav-links li a {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: Roboto;
   font-weight: 400;
   color: #000000;

@@ -50,13 +50,13 @@
         .nav-links{
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: .5em;
             li{
                 list-style: none;
                 line-height: 1em;
                 a{
                     text-decoration: none;
-                    font-size: 1.2em;
+                    font-size: 1em;
                     font-family: Roboto;
                     font-weight: 400;
                     color: $negro;

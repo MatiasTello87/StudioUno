@@ -12,6 +12,13 @@ btnHamb.addEventListener('click', ()=>{
         navMenu.classList.remove('active');
       });
     }
+
+    document.querySelectorAll('.contain-navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
 });
+});
+
 
 
