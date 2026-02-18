@@ -27,6 +27,7 @@ body .contenedor_ppal header {
   backdrop-filter: blur(2.5px);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 5;
 }
 body .contenedor_ppal header img {
   max-width: 5em;
@@ -160,6 +161,7 @@ body .contenedor_ppal main .direccion {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
+  align-items: center;
   padding: 2em 1em;
 }
 body .contenedor_ppal main .direccion h2 {
@@ -176,9 +178,32 @@ body .contenedor_ppal main .direccion p {
   font-weight: 400;
   font-size: 0.8em;
 }
-body .contenedor_ppal main .direccion img {
+body .contenedor_ppal main .direccion .contain-img-btnvermas {
+  position: relative; /* ¡Fundamental! Es la base del botón */
+  width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
+  overflow: hidden; /* Por si quieres efectos de bordes redondeados */
+  border-radius: 12px;
+}
+body .contenedor_ppal main .direccion .contain-img-btnvermas .img-direc {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
+  position: absolute;
+  /* El botón flota sobre el padre */
+  bottom: 5%;
+  /* Lo bajamos a la mitad */
+  right: 5%;
+  /* Lo corremos a la mitad */
+  /* El truco para centrarlo perfecto */
+  padding: 0.3em 0.5em;
+  color: #BF8FC4;
+  background-color: #ffffff;
+  color: #BF8FC4;
+  border: 1px solid #BF8FC4;
+  cursor: pointer;
+  border-radius: 50px;
 }
 body .contenedor_ppal main .docentes {
   width: 100%;

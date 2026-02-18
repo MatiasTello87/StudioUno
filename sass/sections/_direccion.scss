@@ -1,5 +1,6 @@
 @mixin direccion(){
   @include box-layout();
+  align-items: center;
   padding: 2em 1em;
   // box-shadow: 1px 0px 7px  #00000052;
   h2{
@@ -8,9 +9,34 @@
   p{
     @include font-parr-seccion();
   }
-  img{
-    max-width: 100%;
-    height: auto;
+  .contain-img-btnvermas {
+  position: relative; /* ¡Fundamental! Es la base del botón */
+  width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
+  overflow: hidden;   /* Por si quieres efectos de bordes redondeados */
+  border-radius: 12px;
+    .img-direc{
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    .btn-vermas{
+      position: absolute; 
+      /* El botón flota sobre el padre */
+      bottom: 5%;           
+      /* Lo bajamos a la mitad */
+      right: 5%;          
+      /* Lo corremos a la mitad */
+      // transform: translate(-50%, -50%); 
+      /* El truco para centrarlo perfecto */
+      padding: .3em .5em;
+      color: $rosa;
+      background-color: $blanco;
+      color: $rosa;
+      border: 1px solid $rosa;
+      cursor: pointer;
+      border-radius: 50px;
+  
+    }
   }
    
 }
