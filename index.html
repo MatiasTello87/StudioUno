@@ -113,13 +113,13 @@
                 </div>
                 <div class="text_inputs">
 
-                    <textarea name="" id="" placeholder="Mensaje"></textarea>
+                    <textarea name="" id="textarea" placeholder="Mensaje"></textarea required>
                     <div class="inputs">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                        <input type="email" placeholder="Email">
-                        <input type="number" placeholder="Telefono">
-                        <button>Enviar</button>
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="text" id="apellido" placeholder="Apellido" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="number" id="tel_usu" placeholder="Telefono" required>
+                        <button type="submit" id="btn-enviar">Enviar</button>
                     </div>
 
                 </div>
@@ -150,5 +150,6 @@
         </footer>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/mensaje.js"></script>
 </body>
 </html>
