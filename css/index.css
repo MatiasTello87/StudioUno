@@ -55,7 +55,7 @@ body .contenedor_ppal header .navbar .contain-navbar {
   text-align: end;
   background-color: #BF8FC4;
   color: #000000;
-  padding: 1.5em 2em;
+  padding: 2em;
   text-decoration: none;
   transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
   pointer-events: none;
