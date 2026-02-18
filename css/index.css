@@ -45,7 +45,6 @@ body .contenedor_ppal header .navbar span {
 }
 body .contenedor_ppal header .navbar .contain-navbar {
   width: 100%;
-  height: 35vh;
   opacity: 0;
   display: flex;
   justify-content: space-between;
@@ -56,7 +55,7 @@ body .contenedor_ppal header .navbar .contain-navbar {
   text-align: end;
   background-color: #BF8FC4;
   color: #000000;
-  padding: 1em 2em;
+  padding: 1.5em 2em;
   text-decoration: none;
   transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
   pointer-events: none;
@@ -103,7 +102,7 @@ body .contenedor_ppal header .navbar .contain-navbar .nav-links li button {
   color: #000000;
   background-color: transparent;
   border: none;
-  box-shadow: 0.8px 0.5px 1px #212121;
+  box-shadow: 1px 1px 1px #121212;
   border-radius: 50%;
   padding: 0.1em 0.5em;
   cursor: pointer;
