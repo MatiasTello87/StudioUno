@@ -17,13 +17,15 @@
         align-items: center;
         right: -100%;
         top: 0;
-        // right: 0;
         position: fixed;
         text-align: end;
         background-color: $blanco;
         padding: 3em 2.5em;
         text-decoration: none;
-        transition: right 0.4s ease;
+        // AGREGA ESTO: Transiciona AMBAS propiedades
+        transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out; 
+        pointer-events: none; // Evita clics accidentales cuando está oculto
+        // transition: right 0.4s ease-in-out;
         .info-navbar{
             text-align: start;
             display: flex;
@@ -78,8 +80,8 @@
     }
     .contain-navbar.active {
         right:0 ;
-        // z-index: -5;
         opacity: 1;
+        pointer-events: auto; // Permite clics cuando está activo
     }
   
     

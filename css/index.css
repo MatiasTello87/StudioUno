@@ -57,7 +57,8 @@ body .contenedor_ppal header .navbar .contain-navbar {
   background-color: #ffffff;
   padding: 3em 2.5em;
   text-decoration: none;
-  transition: right 0.4s ease;
+  transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  pointer-events: none;
 }
 body .contenedor_ppal header .navbar .contain-navbar .info-navbar {
   text-align: start;
@@ -109,6 +110,7 @@ body .contenedor_ppal header .navbar .contain-navbar .nav-links li button {
 body .contenedor_ppal header .navbar .contain-navbar.active {
   right: 0;
   opacity: 1;
+  pointer-events: auto;
 }
 body .contenedor_ppal main {
   width: 100%;
