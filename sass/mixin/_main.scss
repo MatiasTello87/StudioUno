@@ -1,7 +1,7 @@
 @mixin main(){
     @include box-layout();
     justify-content: center;
-    padding: 1em .8em;
+    padding: 1em;
     padding-top: $alt-header;
     text-align: center;
 
@@ -12,7 +12,7 @@
     }
     // Mediaquerie- mobil
     @include mobil(){
-        background-color: rgb(79, 193, 50)
+        background-color: rgb(20, 98, 101)
     }
     
     .inicio{

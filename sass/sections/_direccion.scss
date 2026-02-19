@@ -48,11 +48,11 @@
         font-size: .5em;
         text-wrap: balance;
         @include mobil(){
-          font-size: 9px;
           width: 90%;
+          font-size: 9px;
+          max-width: 90%;
         }
         @include mobil-medium(){
-          color: red;
           font-size: 11px;
 
         }

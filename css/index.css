@@ -120,7 +120,7 @@ body .contenedor_ppal main {
   flex-direction: column;
   gap: 1em;
   justify-content: center;
-  padding: 1em 0.8em;
+  padding: 1em;
   padding-top: 64px;
   text-align: center;
 }
@@ -131,7 +131,7 @@ body .contenedor_ppal main {
 }
 @media screen and (min-width: 410px) {
   body .contenedor_ppal main {
-    background-color: rgb(79, 193, 50);
+    background-color: rgb(20, 98, 101);
   }
 }
 body .contenedor_ppal main .inicio {
@@ -223,13 +223,13 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
 }
 @media screen and (min-width: 410px) {
   body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
-    font-size: 9px;
     width: 90%;
+    font-size: 9px;
+    max-width: 90%;
   }
 }
 @media screen and (min-width: 500px) {
   body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
-    color: red;
     font-size: 11px;
   }
 }
