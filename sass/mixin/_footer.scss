@@ -10,11 +10,9 @@
     background-color: $negro;
     .logos_footer{
         @include barra();
-        justify-content: space-evenly;
-        gap: 3em;
+        justify-content: space-between;
+        gap: 4em;
         width: 100%;
-        // .logo_footer{
-        // }
         .info_footer{
             display: flex;
             flex-direction: column;

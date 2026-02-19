@@ -124,16 +124,6 @@ body .contenedor_ppal main {
   padding-top: 64px;
   text-align: center;
 }
-@media screen and (min-width: 375px) {
-  body .contenedor_ppal main {
-    background-color: rgb(114, 160, 209);
-  }
-}
-@media screen and (min-width: 410px) {
-  body .contenedor_ppal main {
-    background-color: rgb(20, 98, 101);
-  }
-}
 body .contenedor_ppal main .inicio {
   width: 100%;
   display: flex;
@@ -216,7 +206,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto.activo 
   visibility: visible;
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
-  width: 80%;
+  width: 95%;
   font-style: normal;
   font-size: 0.5em;
   text-wrap: balance;
@@ -385,8 +375,8 @@ body .contenedor_ppal footer .logos_footer {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 3em;
+  justify-content: space-between;
+  gap: 4em;
   width: 100%;
 }
 body .contenedor_ppal footer .logos_footer .info_footer {

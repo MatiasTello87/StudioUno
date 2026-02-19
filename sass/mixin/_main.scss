@@ -7,13 +7,13 @@
 
 
     // Mediaquerie - mobil smaller
-    @include mobil-smaller(){
-        background-color: rgb(114, 160, 209)
-    }
+    // @include mobil-smaller(){
+    //     background-color: rgb(209, 162, 114)
+    // }
     // Mediaquerie- mobil
-    @include mobil(){
-        background-color: rgb(20, 98, 101)
-    }
+    // @include mobil(){
+    //     background-color: rgb(119, 158, 159)
+    // }
     
     .inicio{
       @include inicio();
