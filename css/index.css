@@ -119,15 +119,19 @@ body .contenedor_ppal main {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
-  gap: 1em;
-  width: 100%;
+  justify-content: center;
   padding: 1em 0.8em;
   padding-top: 64px;
   text-align: center;
 }
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 375px) {
   body .contenedor_ppal main {
     background-color: rgb(114, 160, 209);
+  }
+}
+@media screen and (min-width: 410px) {
+  body .contenedor_ppal main {
+    background-color: rgb(79, 193, 50);
   }
 }
 body .contenedor_ppal main .inicio {
@@ -199,7 +203,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.8em;
   gap: 0.5em;
@@ -212,9 +216,22 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto.activo 
   visibility: visible;
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+  width: 80%;
   font-style: normal;
   font-size: 0.5em;
   text-wrap: balance;
+}
+@media screen and (min-width: 410px) {
+  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+    font-size: 9px;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 500px) {
+  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+    color: red;
+    font-size: 11px;
+  }
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
   z-index: 2;
@@ -222,7 +239,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-ce
   right: 1em;
   bottom: 0.5em;
   font-family: Roboto;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #ffffff;
   background-color: transparent;
   border: none;

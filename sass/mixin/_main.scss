@@ -1,16 +1,20 @@
 @mixin main(){
     @include box-layout();
-    gap: 1em;
-    width: 100%;
+    justify-content: center;
     padding: 1em .8em;
     padding-top: $alt-header;
     text-align: center;
 
 
-    // Mediaquerie
-    @include mobile(){
+    // Mediaquerie - mobil smaller
+    @include mobil-smaller(){
         background-color: rgb(114, 160, 209)
     }
+    // Mediaquerie- mobil
+    @include mobil(){
+        background-color: rgb(79, 193, 50)
+    }
+    
     .inicio{
       @include inicio();
       width: 100%;
