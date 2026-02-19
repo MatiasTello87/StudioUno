@@ -48,6 +48,7 @@
         text-wrap: balance;
       }
       .btn-cerrar-overlay{
+        z-index: 2;
         position: absolute;
         right: 1em;
         bottom: .7em;
@@ -68,8 +69,8 @@
       right: 5%;          
       padding: .3em .5em;
       color: $rosa;
+      border: none;
       background-color: $blanco;
-      border: 1px solid $rosa;
       cursor: pointer;
       border-radius: 50px;
     }

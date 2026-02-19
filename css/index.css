@@ -217,6 +217,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
   text-wrap: balance;
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
+  z-index: 2;
   position: absolute;
   right: 1em;
   bottom: 0.7em;
@@ -236,8 +237,8 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
   right: 5%;
   padding: 0.3em 0.5em;
   color: #BF8FC4;
+  border: none;
   background-color: #ffffff;
-  border: 1px solid #BF8FC4;
   cursor: pointer;
   border-radius: 50px;
 }
