@@ -1,13 +1,17 @@
 @mixin footer(){
     @include barra();
     flex-direction: column;
-    align-items: start;
-    padding: 2em;
-
-    // width: 100%;
+    padding: 2em .5em;
     gap: 1em;
     color: $blanco;
     background-color: $negro;
+     .contain-footer{
+      // Mediaquerie
+      @include tablet(){
+         width: 60%;
+       }
+
+   }
     .logos_footer{
         @include barra();
         justify-content: space-between;

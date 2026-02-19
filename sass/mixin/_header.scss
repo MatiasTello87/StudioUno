@@ -2,8 +2,9 @@ $alt-header: 64px;
 //utilizo una variable para usar como referencia para el main
 @mixin header(){
    @include barra();
+   justify-content: center;
    position: fixed;
-   // width: 100%;
+   width: 100%;
    height: $alt-header;
    padding: 0 2em;
    background-color: #ffffff8a;
@@ -15,7 +16,14 @@ $alt-header: 64px;
    border-bottom-right-radius: 10px;
    z-index: 5;
 
-   // Mediaquerie
+   .header-icons{
+      @include barra();
+      // Mediaquerie
+      @include tablet(){
+         width: 80%;
+       }
+
+   }
    img{
       max-width: 5em;
    }

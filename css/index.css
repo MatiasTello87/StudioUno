@@ -19,7 +19,9 @@ body .contenedor_ppal header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   position: fixed;
+  width: 100%;
   height: 64px;
   padding: 0 2em;
   background-color: rgba(255, 255, 255, 0.5411764706);
@@ -28,6 +30,17 @@ body .contenedor_ppal header {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: 5;
+}
+body .contenedor_ppal header .header-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 650px) {
+  body .contenedor_ppal header .header-icons {
+    width: 80%;
+  }
 }
 body .contenedor_ppal header img {
   max-width: 5em;
@@ -54,9 +67,10 @@ body .contenedor_ppal header .navbar .contain-navbar {
   top: 0;
   position: fixed;
   text-align: end;
-  background-color: #BF8FC4;
+  padding: 4em 2em 2em;
   color: #000000;
-  padding: 3em 2em;
+  background-color: #BF8FC4;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.2352941176);
   text-decoration: none;
   transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
   pointer-events: none;
@@ -123,6 +137,17 @@ body .contenedor_ppal main {
   padding: 1em;
   padding-top: 64px;
   text-align: center;
+}
+@media screen and (min-width: 410px) {
+  body .contenedor_ppal main {
+    background-color: rgb(119, 158, 159);
+  }
+}
+@media screen and (min-width: 650px) {
+  body .contenedor_ppal main {
+    width: 80%;
+    background-color: rgb(125, 154, 67);
+  }
 }
 body .contenedor_ppal main .inicio {
   width: 100%;
@@ -256,6 +281,7 @@ body .contenedor_ppal main .docentes {
   flex-direction: column;
   gap: 1em;
   padding: 2em 0;
+  gap: 2em;
 }
 body .contenedor_ppal main .docentes h2 {
   font-family: Plafair;
@@ -266,25 +292,45 @@ body .contenedor_ppal main .docentes h2 {
   padding-bottom: 0.5em;
 }
 body .contenedor_ppal main .docentes .profe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-body .contenedor_ppal main .docentes .profe .profe-info {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  padding-right: 0.5em;
-  gap: 0.7em;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+body .contenedor_ppal main .docentes .profe .profe-info {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .contenedor_ppal main .docentes .profe .profe-info p {
   font-family: Roboto;
   font-size: 10px;
-  text-align: start;
   text-wrap: balance;
 }
 body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(1) {
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 14px;
+}
+body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(2) {
+  color: rgb(70, 70, 70);
+}
+body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
+  margin-top: 1em;
+  font-size: 11px;
+  max-width: 90%;
+}
+@media screen and (min-width: 650px) {
+  body .contenedor_ppal main .docentes .profe .profe-info {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 375px) {
+  body .contenedor_ppal main .docentes .profe {
+    flex-direction: row;
+  }
 }
 body .contenedor_ppal main .form {
   width: 100%;
@@ -364,11 +410,15 @@ body .contenedor_ppal footer {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  align-items: start;
-  padding: 2em;
+  padding: 2em 0.5em;
   gap: 1em;
   color: #ffffff;
   background-color: #000000;
+}
+@media screen and (min-width: 650px) {
+  body .contenedor_ppal footer .contain-footer {
+    width: 60%;
+  }
 }
 body .contenedor_ppal footer .logos_footer {
   display: flex;

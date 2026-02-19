@@ -1,32 +1,50 @@
 @mixin docentes(){
   @include box-layout();
   padding: 2em 0;
+  gap: 2em;
 
   //  box-shadow: 1px 0px 7px  #00000052;
    h2{
      @include font-title-seccion();
     }
     .profe{
+      max-width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1em;
+      gap: .5em;
       .profe-info{
+        max-width: 80%;
         display: flex;
         flex-direction: column;
-        padding-right: .5em;
-        gap: .7em;
+        align-items: center;
         p{
           font-family: Roboto;
           font-size: 10px;
-          text-align: start;
+          // text-align: start;
           text-wrap: balance;
         }
         p:nth-child(1){
-          font-weight: 800;
+          font-weight: 600;
+          font-size: 14px;
         }
-
+        p:nth-child(2){
+          color: rgb(70, 70, 70);
+        }
+        p:nth-child(3){
+          margin-top: 1em;
+          font-size: 11px;
+          max-width: 90%;
+        }
+        // Mediaquerie del profe-info
+          @include tablet(){
+          max-width: 50%;
+        }
     }
-      
+      // Mediaquerie profe
+      @include mobil-smaller(){
+        flex-direction: row;
+      }
   }
 }
