@@ -31,7 +31,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 1em;
+      padding: .5em;
       gap: .5em;
       // estado oculto
       opacity: 0;
@@ -51,9 +51,9 @@
         z-index: 2;
         position: absolute;
         right: 1em;
-        bottom: .7em;
+        bottom: .5em;
         font-family: Roboto;
-        font-size: 1em; 
+        font-size: 1.1em; 
         color: $blanco;
         background-color: transparent;
         border: none;

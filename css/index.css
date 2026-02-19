@@ -201,7 +201,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
   gap: 0.5em;
   opacity: 0;
   visibility: hidden;
@@ -220,9 +220,9 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-ce
   z-index: 2;
   position: absolute;
   right: 1em;
-  bottom: 0.7em;
+  bottom: 0.5em;
   font-family: Roboto;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #ffffff;
   background-color: transparent;
   border: none;
