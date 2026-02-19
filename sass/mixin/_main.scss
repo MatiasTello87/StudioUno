@@ -11,12 +11,12 @@
     //     background-color: rgb(209, 162, 114)
     // }
     // Mediaquerie- mobil
-    @include mobil(){
-        background-color: rgb(119, 158, 159)
-    }
+    // @include mobil(){
+    //     background-color: rgb(119, 158, 159)
+    // }
     @include tablet(){
         width: 80%;
-        background-color: rgb(125, 154, 67)
+        // background-color: rgb(125, 154, 67)
     }
     
     .inicio{

@@ -138,15 +138,9 @@ body .contenedor_ppal main {
   padding-top: 64px;
   text-align: center;
 }
-@media screen and (min-width: 410px) {
-  body .contenedor_ppal main {
-    background-color: rgb(119, 158, 159);
-  }
-}
 @media screen and (min-width: 650px) {
   body .contenedor_ppal main {
     width: 80%;
-    background-color: rgb(125, 154, 67);
   }
 }
 body .contenedor_ppal main .inicio {
