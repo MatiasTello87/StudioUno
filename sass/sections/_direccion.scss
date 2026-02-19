@@ -41,14 +41,18 @@
         opacity: 1;
         visibility: visible;
       }
+      
       p{
         font-style: normal;
         font-size: .5em;
         text-wrap: balance;
       }
       .btn-cerrar-overlay{
+        position: absolute;
+        right: 1em;
+        bottom: .7em;
         font-family: Roboto;
-        font-size: .8em; 
+        font-size: 1em; 
         color: $blanco;
         background-color: transparent;
         border: none;

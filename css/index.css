@@ -20,7 +20,7 @@ body .contenedor_ppal header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  height: 48px;
+  height: 64px;
   padding: 0 2em;
   background-color: rgba(255, 255, 255, 0.5411764706);
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.2352941176);
@@ -56,7 +56,7 @@ body .contenedor_ppal header .navbar .contain-navbar {
   text-align: end;
   background-color: #BF8FC4;
   color: #000000;
-  padding: 2em;
+  padding: 3em 2em;
   text-decoration: none;
   transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
   pointer-events: none;
@@ -122,7 +122,7 @@ body .contenedor_ppal main {
   gap: 1em;
   width: 100%;
   padding: 1em;
-  padding-top: 48px;
+  padding-top: 64px;
   text-align: center;
 }
 @media screen and (min-width: 530px) {
@@ -217,8 +217,11 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
   text-wrap: balance;
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
+  position: absolute;
+  right: 1em;
+  bottom: 0.7em;
   font-family: Roboto;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #ffffff;
   background-color: transparent;
   border: none;
