@@ -1,12 +1,14 @@
 @mixin inicio(){
   @include box-layout();
+  align-items: center;
   padding: 2em 1em;
-  // box-shadow: 1px 0px 7px  #00000052;
   h1{
     @include font-title();
   }
   p{
-    @include font-parrafo();
+    @include desktop(){
+      width: 70%;
+    }
   }  
     video{
       background-color: aliceblue;

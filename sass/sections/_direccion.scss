@@ -2,12 +2,14 @@
   @include box-layout();
   align-items: center;
   padding: 2em 1em;
-  // box-shadow: 1px 0px 7px  #00000052;
   h2{
     @include font-title-seccion();
   }
   p{
-    @include font-parr-seccion();
+     @include desktop(){
+      width: 70%;
+      // font-size: 12px;
+    }
   }
   .contain-img-btnvermas {
   position: relative; /* ¡Fundamental! Es la base del botón */
@@ -29,7 +31,7 @@
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: .8em;
       gap: .5em;
@@ -53,14 +55,16 @@
           max-width: 90%;
         }
         @include mobil-medium(){
-          font-size: 11px;
-
+          font-size: 12px;
+        }
+        @include desktop(){
+          font-size: 14px;
         }
       }
       .btn-cerrar-overlay{
         z-index: 2;
         position: absolute;
-        right: 1em;
+        right: .5em;
         bottom: .5em;
         font-family: Roboto;
         font-size: 1em; 
@@ -71,6 +75,10 @@
         border-radius: 50%;
         padding: .1em .5em;
         cursor: pointer;
+        @include tablet(){
+          right: 2em;
+          bottom: 1.5em;
+        }
       }
     }
     .btn-vermas{

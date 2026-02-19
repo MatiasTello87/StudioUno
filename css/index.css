@@ -22,7 +22,7 @@ body .contenedor_ppal header {
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 64px;
+  height: 56px;
   padding: 0 2em;
   background-color: rgba(255, 255, 255, 0.5411764706);
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.2352941176);
@@ -134,13 +134,14 @@ body .contenedor_ppal main {
   flex-direction: column;
   gap: 1em;
   justify-content: center;
+  align-items: center;
   padding: 1em;
-  padding-top: 64px;
+  padding-top: 56px;
   text-align: center;
 }
 @media screen and (min-width: 650px) {
   body .contenedor_ppal main {
-    width: 80%;
+    width: 90%;
   }
 }
 body .contenedor_ppal main .inicio {
@@ -149,6 +150,7 @@ body .contenedor_ppal main .inicio {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1em;
+  align-items: center;
   padding: 2em 1em;
   width: 100%;
 }
@@ -159,11 +161,10 @@ body .contenedor_ppal main .inicio h1 {
   line-height: 90%;
   font-size: 1.5em;
 }
-body .contenedor_ppal main .inicio p {
-  font-family: Roboto;
-  font-weight: 300;
-  line-height: 18px;
-  font-size: 0.8em;
+@media screen and (min-width: 900px) {
+  body .contenedor_ppal main .inicio p {
+    width: 70%;
+  }
 }
 body .contenedor_ppal main .inicio video {
   background-color: aliceblue;
@@ -185,11 +186,10 @@ body .contenedor_ppal main .direccion h2 {
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
-body .contenedor_ppal main .direccion p {
-  font-family: Plafair;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.8em;
+@media screen and (min-width: 900px) {
+  body .contenedor_ppal main .direccion p {
+    width: 70%;
+  }
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas {
   position: relative; /* ¡Fundamental! Es la base del botón */
@@ -212,7 +212,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0.8em;
   gap: 0.5em;
@@ -239,13 +239,18 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
 }
 @media screen and (min-width: 500px) {
   body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
-    font-size: 11px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+    font-size: 14px;
   }
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
   z-index: 2;
   position: absolute;
-  right: 1em;
+  right: 0.5em;
   bottom: 0.5em;
   font-family: Roboto;
   font-size: 1em;
@@ -256,6 +261,12 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-ce
   border-radius: 50%;
   padding: 0.1em 0.5em;
   cursor: pointer;
+}
+@media screen and (min-width: 650px) {
+  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
+    right: 2em;
+    bottom: 1.5em;
+  }
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
   position: absolute;
@@ -269,11 +280,8 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
   border-radius: 50px;
 }
 body .contenedor_ppal main .docentes {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 1em;
   padding: 2em 0;
   gap: 2em;
 }
@@ -286,7 +294,6 @@ body .contenedor_ppal main .docentes h2 {
   padding-bottom: 0.5em;
 }
 body .contenedor_ppal main .docentes .profe {
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -294,7 +301,7 @@ body .contenedor_ppal main .docentes .profe {
   gap: 0.5em;
 }
 body .contenedor_ppal main .docentes .profe .profe-info {
-  max-width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,14 +323,31 @@ body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
   font-size: 11px;
   max-width: 90%;
 }
+@media screen and (min-width: 500px) {
+  body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 375px) {
+  body .contenedor_ppal main .docentes .profe .profe-info {
+    align-items: start;
+  }
+}
 @media screen and (min-width: 650px) {
   body .contenedor_ppal main .docentes .profe .profe-info {
-    max-width: 50%;
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  body .contenedor_ppal main .docentes .profe .profe-info {
+    max-width: 30%;
   }
 }
 @media screen and (min-width: 375px) {
   body .contenedor_ppal main .docentes .profe {
     flex-direction: row;
+    text-align: start;
+    gap: 1em;
   }
 }
 body .contenedor_ppal main .form {
@@ -334,6 +358,7 @@ body .contenedor_ppal main .form {
   gap: 1em;
   align-items: center;
   padding: 2em 0;
+  /*Mediaqueries */
 }
 body .contenedor_ppal main .form .form_title {
   text-align: center;
@@ -397,6 +422,16 @@ body .contenedor_ppal main .form .text_inputs .inputs button {
   color: #ffffff;
   cursor: pointer;
   border-radius: 30px;
+}
+@media screen and (min-width: 650px) {
+  body .contenedor_ppal main .form {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) {
+  body .contenedor_ppal main .form {
+    width: 50%;
+  }
 }
 body .contenedor_ppal footer {
   display: flex;
