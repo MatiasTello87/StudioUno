@@ -189,18 +189,51 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .img-direc {
   max-width: 100%;
   height: auto;
 }
+body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto.activo {
+  opacity: 1;
+  visibility: visible;
+}
+body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+  font-style: normal;
+  font-size: 0.5em;
+  text-wrap: balance;
+}
+body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
+  font-family: Roboto;
+  font-size: 0.8em;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  box-shadow: 1px 1px 1px #fff;
+  border-radius: 50%;
+  padding: 0.1em 0.5em;
+  cursor: pointer;
+}
 body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
   position: absolute;
-  /* El botón flota sobre el padre */
   bottom: 5%;
-  /* Lo bajamos a la mitad */
   right: 5%;
-  /* Lo corremos a la mitad */
-  /* El truco para centrarlo perfecto */
   padding: 0.3em 0.5em;
   color: #BF8FC4;
   background-color: #ffffff;
-  color: #BF8FC4;
   border: 1px solid #BF8FC4;
   cursor: pointer;
   border-radius: 50px;

@@ -19,23 +19,55 @@
       max-width: 100%;
       height: auto;
     }
+    .capa-texto{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); // Fondo negro con 70% de opacidad
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      gap: .5em;
+      // estado oculto
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease;
+      &.activo {
+        opacity: 1;
+        visibility: visible;
+      }
+      p{
+        font-style: normal;
+        font-size: .5em;
+        text-wrap: balance;
+      }
+      .btn-cerrar-overlay{
+        font-family: Roboto;
+        font-size: .8em; 
+        color: $blanco;
+        background-color: transparent;
+        border: none;
+        box-shadow: 1px 1px 1px #fff;
+        border-radius: 50%;
+        padding: .1em .5em;
+        cursor: pointer;
+      }
+    }
     .btn-vermas{
       position: absolute; 
-      /* El botón flota sobre el padre */
       bottom: 5%;           
-      /* Lo bajamos a la mitad */
       right: 5%;          
-      /* Lo corremos a la mitad */
-      // transform: translate(-50%, -50%); 
-      /* El truco para centrarlo perfecto */
       padding: .3em .5em;
       color: $rosa;
       background-color: $blanco;
-      color: $rosa;
       border: 1px solid $rosa;
       cursor: pointer;
       border-radius: 50px;
-  
     }
   }
    
