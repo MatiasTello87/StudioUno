@@ -121,7 +121,7 @@ body .contenedor_ppal main {
   gap: 1em;
   gap: 1em;
   width: 100%;
-  padding: 1em;
+  padding: 1em 0.8em;
   padding-top: 64px;
   text-align: center;
 }
@@ -201,7 +201,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
+  padding: 0.8em;
   gap: 0.5em;
   opacity: 0;
   visibility: hidden;
