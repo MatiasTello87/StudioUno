@@ -1,14 +1,15 @@
 @mixin direccion(){
   @include box-layout();
   align-items: center;
+  gap: 2em;
   padding: 2em 1em;
   h2{
     @include font-title-seccion();
   }
   p{
-     @include desktop(){
-      width: 70%;
-      // font-size: 12px;
+    font-size: 14px;
+    @include desktop(){
+      width: 50%;
     }
   }
   .contain-img-btnvermas {

@@ -1,22 +1,39 @@
 @mixin footer(){
     @include barra();
-    flex-direction: column;
-    padding: 2em .5em;
-    gap: 1em;
+    justify-content: center;
+    padding: 2em;
     color: $blanco;
     background-color: $negro;
-     .contain-footer{
-      // Mediaquerie
-      @include tablet(){
-         width: 60%;
-       }
-
-   }
-    .logos_footer{
-        @include barra();
-        justify-content: space-between;
-        gap: 4em;
+    .contain-footer{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        // Mediaquerie
+        @include mobil(){
+            width: 90%;
+        }
+        @include mobil-medium(){
+            width: 85%;
+        }
+        @include tablet(){
+          width: 60%;
+        }
+       .logos_footer{
+        @include barra();
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+            color: $blanco;
+            text-decoration: none;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: .8em;
+            @include mobil-medium(){
+                font-size: 1em;
+            }
+        }
+        }
         .info_footer{
             display: flex;
             flex-direction: column;
@@ -26,21 +43,24 @@
                 gap: .5em;
             }
             p{
-                font-size: .7em;
+                font-size: .6em;
+                font-family: Roboto;
+                font-weight: 400;
+                @include mobil-medium(){
+                    font-size: 0.8em;
+                }
             }
         }
-    }
-    .secciones_footer{
-        display: flex;
-        flex-direction: column;
-        gap: .1em;
-        a{
-            color: $blanco;
-            text-decoration: none;
-            font-family: Roboto;
-            font-weight: 400;
-            font-size: .8em;
-        }        
-    }
+   }
+    
+    // .secciones_footer{
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: .1em;
+    //     transform: translateY(-3em);
+    //     a{
+    //         
+    //     }        
+    // }
     
 }

@@ -161,9 +161,12 @@ body .contenedor_ppal main .inicio h1 {
   line-height: 90%;
   font-size: 1.5em;
 }
+body .contenedor_ppal main .inicio p {
+  font-size: 14px;
+}
 @media screen and (min-width: 900px) {
   body .contenedor_ppal main .inicio p {
-    width: 70%;
+    width: 50%;
   }
 }
 body .contenedor_ppal main .inicio video {
@@ -176,6 +179,7 @@ body .contenedor_ppal main .direccion {
   flex-direction: column;
   gap: 1em;
   align-items: center;
+  gap: 2em;
   padding: 2em 1em;
 }
 body .contenedor_ppal main .direccion h2 {
@@ -186,9 +190,12 @@ body .contenedor_ppal main .direccion h2 {
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
+body .contenedor_ppal main .direccion p {
+  font-size: 14px;
+}
 @media screen and (min-width: 900px) {
   body .contenedor_ppal main .direccion p {
-    width: 70%;
+    width: 50%;
   }
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas {
@@ -297,8 +304,7 @@ body .contenedor_ppal main .docentes .profe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 0.5em;
+  gap: 1em;
 }
 body .contenedor_ppal main .docentes .profe .profe-info {
   width: 100%;
@@ -347,7 +353,7 @@ body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
   body .contenedor_ppal main .docentes .profe {
     flex-direction: row;
     text-align: start;
-    gap: 1em;
+    align-items: start;
   }
 }
 body .contenedor_ppal main .form {
@@ -438,49 +444,70 @@ body .contenedor_ppal footer {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  padding: 2em 0.5em;
-  gap: 1em;
+  justify-content: center;
+  padding: 2em;
   color: #ffffff;
   background-color: #000000;
+}
+body .contenedor_ppal footer .contain-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+@media screen and (min-width: 410px) {
+  body .contenedor_ppal footer .contain-footer {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 500px) {
+  body .contenedor_ppal footer .contain-footer {
+    width: 85%;
+  }
 }
 @media screen and (min-width: 650px) {
   body .contenedor_ppal footer .contain-footer {
     width: 60%;
   }
 }
-body .contenedor_ppal footer .logos_footer {
+body .contenedor_ppal footer .contain-footer .logos_footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
-  gap: 4em;
-  width: 100%;
-}
-body .contenedor_ppal footer .logos_footer .info_footer {
-  display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  align-items: flex-start;
 }
-body .contenedor_ppal footer .logos_footer .info_footer .redes_footer {
-  display: flex;
-  gap: 0.5em;
-}
-body .contenedor_ppal footer .logos_footer .info_footer p {
-  font-size: 0.7em;
-}
-body .contenedor_ppal footer .secciones_footer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1em;
-}
-body .contenedor_ppal footer .secciones_footer a {
+body .contenedor_ppal footer .contain-footer .logos_footer a {
   color: #ffffff;
   text-decoration: none;
   font-family: Roboto;
   font-weight: 400;
   font-size: 0.8em;
+}
+@media screen and (min-width: 500px) {
+  body .contenedor_ppal footer .contain-footer .logos_footer a {
+    font-size: 1em;
+  }
+}
+body .contenedor_ppal footer .contain-footer .info_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+body .contenedor_ppal footer .contain-footer .info_footer .redes_footer {
+  display: flex;
+  gap: 0.5em;
+}
+body .contenedor_ppal footer .contain-footer .info_footer p {
+  font-size: 0.6em;
+  font-family: Roboto;
+  font-weight: 400;
+}
+@media screen and (min-width: 500px) {
+  body .contenedor_ppal footer .contain-footer .info_footer p {
+    font-size: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

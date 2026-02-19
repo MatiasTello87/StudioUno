@@ -6,8 +6,9 @@
     @include font-title();
   }
   p{
+    font-size: 14px;
     @include desktop(){
-      width: 70%;
+      width: 50%;
     }
   }  
     video{

@@ -10,8 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: .5em;
+    gap: 1em;
     .profe-info{
       width: 100%;
       display: flex;
@@ -52,7 +51,7 @@
     @include mobil-smaller(){
       flex-direction: row;
       text-align: start;
-      gap:1em;
+      align-items: start;
     }
   }
 }
