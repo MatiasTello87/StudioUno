@@ -1,7 +1,7 @@
 @mixin docentes(){
   display: flex;
   flex-direction: column;
-  padding: 2em 0;
+  padding: 2em;
   gap: 2em;
   h2{
     @include font-title-seccion();
@@ -25,8 +25,9 @@
         font-weight: 600;
         font-size: 14px;
       }
+      
       p:nth-child(2){
-        color: rgb(70, 70, 70);
+        color: rgb(45, 45, 45);
       }
       p:nth-child(3){
         margin-top: 1em;

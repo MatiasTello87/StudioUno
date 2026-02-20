@@ -135,7 +135,7 @@ body .contenedor_ppal main {
   gap: 1em;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 1em 0;
   padding-top: 56px;
   text-align: center;
 }
@@ -151,7 +151,7 @@ body .contenedor_ppal main .inicio {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  padding: 2em 1em;
+  padding: 2em;
   width: 100%;
 }
 body .contenedor_ppal main .inicio h1 {
@@ -180,7 +180,7 @@ body .contenedor_ppal main .direccion {
   gap: 1em;
   align-items: center;
   gap: 2em;
-  padding: 2em 1em;
+  padding: 2em 0;
 }
 body .contenedor_ppal main .direccion h2 {
   font-family: Plafair;
@@ -192,6 +192,7 @@ body .contenedor_ppal main .direccion h2 {
 }
 body .contenedor_ppal main .direccion p {
   font-size: 14px;
+  width: 90%;
 }
 @media screen and (min-width: 900px) {
   body .contenedor_ppal main .direccion p {
@@ -202,7 +203,6 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas {
   position: relative; /* ¡Fundamental! Es la base del botón */
   width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
   overflow: hidden; /* Por si quieres efectos de bordes redondeados */
-  border-radius: 12px;
 }
 body .contenedor_ppal main .direccion .contain-img-btnvermas .img-direc {
   display: block;
@@ -221,7 +221,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.8em;
+  padding: 0.5em 0.5em 1.5em;
   gap: 0.5em;
   opacity: 0;
   visibility: hidden;
@@ -234,14 +234,14 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto.activo 
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
   width: 95%;
   font-style: normal;
-  font-size: 0.5em;
+  font-size: 10px;
   text-wrap: balance;
 }
 @media screen and (min-width: 410px) {
   body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
     width: 90%;
-    font-size: 9px;
     max-width: 90%;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 500px) {
@@ -257,8 +257,8 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
 body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
   z-index: 2;
   position: absolute;
-  right: 0.5em;
-  bottom: 0.5em;
+  right: 1.5em;
+  bottom: 0.8em;
   font-family: Roboto;
   font-size: 1em;
   color: #ffffff;
@@ -289,7 +289,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
 body .contenedor_ppal main .docentes {
   display: flex;
   flex-direction: column;
-  padding: 2em 0;
+  padding: 2em;
   gap: 2em;
 }
 body .contenedor_ppal main .docentes h2 {
@@ -321,7 +321,7 @@ body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(1) {
   font-size: 14px;
 }
 body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(2) {
-  color: rgb(70, 70, 70);
+  color: rgb(45, 45, 45);
 }
 body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
   margin-top: 1em;
@@ -371,11 +371,11 @@ body .contenedor_ppal main .form .form_title h3 {
   font-style: italic;
   font-family: Playfair;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 body .contenedor_ppal main .form .form_title p {
   font-family: Roboto;
-  font-size: 0.5em;
+  font-size: 0.6em;
   font-style: italic;
 }
 body .contenedor_ppal main .form .text_inputs {

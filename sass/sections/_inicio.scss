@@ -1,7 +1,7 @@
 @mixin inicio(){
   @include box-layout();
   align-items: center;
-  padding: 2em 1em;
+  padding: 2em;
   h1{
     @include font-title();
   }

@@ -2,12 +2,13 @@
   @include box-layout();
   align-items: center;
   gap: 2em;
-  padding: 2em 1em;
+  padding: 2em 0;
   h2{
     @include font-title-seccion();
   }
   p{
     font-size: 14px;
+    width: 90%;
     @include desktop(){
       width: 50%;
     }
@@ -16,72 +17,71 @@
   position: relative; /* ¡Fundamental! Es la base del botón */
   width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
   overflow: hidden;   /* Por si quieres efectos de bordes redondeados */
-  border-radius: 12px;
-    .img-direc{
-      display: block;
-      max-width: 100%;
-      height: auto;
+  .img-direc{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .capa-texto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); // Fondo negro con 70% de opacidad
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.5em 1.5em;
+    gap: .5em;
+    // estado oculto
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    &.activo {
+      opacity: 1;
+      visibility: visible;
     }
-    .capa-texto{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); // Fondo negro con 70% de opacidad
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: .8em;
-      gap: .5em;
-      // estado oculto
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.4s ease;
-      &.activo {
-        opacity: 1;
-        visibility: visible;
-      }
       
-      p{
-        width: 95%;
-        font-style: normal;
-        font-size: .5em;
-        text-wrap: balance;
-        @include mobil(){
-          width: 90%;
-          font-size: 9px;
-          max-width: 90%;
-        }
-        @include mobil-medium(){
-          font-size: 12px;
-        }
-        @include desktop(){
-          font-size: 14px;
-        }
+    p{
+      width: 95%;
+      font-style: normal;
+      font-size: 10px;
+      text-wrap: balance;
+      @include mobil(){
+        width: 90%;
+        max-width: 90%;
+        font-size: 11px;
       }
-      .btn-cerrar-overlay{
-        z-index: 2;
-        position: absolute;
-        right: .5em;
-        bottom: .5em;
-        font-family: Roboto;
-        font-size: 1em; 
-        color: $blanco;
-        background-color: transparent;
-        border: none;
-        box-shadow: 1px 1px 1px #fff;
-        border-radius: 50%;
-        padding: .1em .5em;
-        cursor: pointer;
-        @include tablet(){
-          right: 2em;
-          bottom: 1.5em;
-        }
+      @include mobil-medium(){
+        font-size: 12px;
+      }
+      @include desktop(){
+        font-size: 14px;
       }
     }
+    .btn-cerrar-overlay{
+      z-index: 2;
+      position: absolute;
+      right: 1.5em;
+      bottom: .8em;
+      font-family: Roboto;
+      font-size: 1em; 
+      color: $blanco;
+      background-color: transparent;
+      border: none;
+      box-shadow: 1px 1px 1px #fff;
+      border-radius: 50%;
+      padding: .1em .5em;
+      cursor: pointer;
+      @include tablet(){
+        right: 2em;
+        bottom: 1.5em;
+      }
+    }
+  }
     .btn-vermas{
       position: absolute; 
       bottom: 5%;           
