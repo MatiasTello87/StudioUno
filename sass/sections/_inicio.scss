@@ -1,12 +1,52 @@
 @mixin inicio(){
   @include box-layout();
   align-items: center;
-  padding: 2em;
+  padding: 3em 0em 0em;
   h1{
     @include font-title();
+    padding: 0 2em;
+  }
+  .carrusel{
+    /* Contenedor del video para manejar las proporciones */
+    .video-wrapper {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-color: #000; /* Fondo negro mientras carga */
+    
+      /* Proporción para MÓVIL (puedes ajustarlo a 9/16 si lo quieres más alto) */
+      aspect-ratio: 4 / 5; 
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Esto hace el recorte inteligente */
+      object-position: center;
+    }
+
+    /* Proporción para DESKTOP */
+    @media (min-width: 992px) {
+      .video-wrapper {
+        aspect-ratio: 16 / 9; /* Formato horizontal de cine */
+        max-height: 85vh;    /* Para que no tape toda la pantalla */
+      }
+    }
+
+    /* Personalizar flechas para que se vean sobre el video */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    background-size: 50%;
+    }
   }
   p{
     font-size: 14px;
+    padding: 0 2em;
+    margin-bottom: 0;
     @include desktop(){
       width: 50%;
     }

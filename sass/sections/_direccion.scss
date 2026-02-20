@@ -2,13 +2,16 @@
   @include box-layout();
   align-items: center;
   gap: 2em;
-  padding: 2em 0;
+  // padding: 2em 0;
   h2{
     @include font-title-seccion();
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   p{
     font-size: 14px;
     width: 90%;
+    margin-bottom: 0;
     @include desktop(){
       width: 50%;
     }
@@ -50,6 +53,8 @@
       font-style: normal;
       font-size: 10px;
       text-wrap: balance;
+      line-height: normal;
+      margin-bottom: 0;
       @include mobil(){
         width: 90%;
         max-width: 90%;
@@ -74,7 +79,7 @@
       border: none;
       box-shadow: 1px 1px 1px #fff;
       border-radius: 50%;
-      padding: .1em .5em;
+      padding: .1em .6em;
       cursor: pointer;
       @include tablet(){
         right: 2em;

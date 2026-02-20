@@ -94,11 +94,14 @@ body .contenedor_ppal header .navbar .contain-navbar .info-navbar .icons-navbar 
 }
 body .contenedor_ppal header .navbar .contain-navbar .info-navbar .p-navbar p {
   font-size: 0.7em;
+  margin-bottom: 0;
+  line-height: normal;
 }
 body .contenedor_ppal header .navbar .contain-navbar .nav-links {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  margin-bottom: 0;
 }
 body .contenedor_ppal header .navbar .contain-navbar .nav-links li {
   list-style: none;
@@ -119,7 +122,7 @@ body .contenedor_ppal header .navbar .contain-navbar .nav-links li button {
   border: none;
   box-shadow: 1px 1px 1px #121212;
   border-radius: 50%;
-  padding: 0.1em 0.5em;
+  padding: 0.3em 0.5em;
   cursor: pointer;
 }
 body .contenedor_ppal header .navbar .contain-navbar.active {
@@ -135,6 +138,7 @@ body .contenedor_ppal main {
   gap: 1em;
   justify-content: center;
   align-items: center;
+  gap: 5em;
   padding: 1em 0;
   padding-top: 56px;
   text-align: center;
@@ -151,7 +155,7 @@ body .contenedor_ppal main .inicio {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  padding: 2em;
+  padding: 3em 0em 0em;
   width: 100%;
 }
 body .contenedor_ppal main .inicio h1 {
@@ -160,9 +164,45 @@ body .contenedor_ppal main .inicio h1 {
   font-weight: 400;
   line-height: 90%;
   font-size: 1.5em;
+  padding: 0 2em;
+}
+body .contenedor_ppal main .inicio .carrusel {
+  /* Contenedor del video para manejar las proporciones */
+  /* Proporción para DESKTOP */
+  /* Personalizar flechas para que se vean sobre el video */
+}
+body .contenedor_ppal main .inicio .carrusel .video-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #000; /* Fondo negro mientras carga */
+  /* Proporción para MÓVIL (puedes ajustarlo a 9/16 si lo quieres más alto) */
+  aspect-ratio: 4/5;
+}
+body .contenedor_ppal main .inicio .carrusel .video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto hace el recorte inteligente */
+  object-position: center;
+}
+@media (min-width: 992px) {
+  body .contenedor_ppal main .inicio .carrusel .video-wrapper {
+    aspect-ratio: 16/9; /* Formato horizontal de cine */
+    max-height: 85vh; /* Para que no tape toda la pantalla */
+  }
+}
+body .contenedor_ppal main .inicio .carrusel .carousel-control-prev-icon,
+body .contenedor_ppal main .inicio .carrusel .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  background-size: 50%;
 }
 body .contenedor_ppal main .inicio p {
   font-size: 14px;
+  padding: 0 2em;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 900px) {
   body .contenedor_ppal main .inicio p {
@@ -180,7 +220,6 @@ body .contenedor_ppal main .direccion {
   gap: 1em;
   align-items: center;
   gap: 2em;
-  padding: 2em 0;
 }
 body .contenedor_ppal main .direccion h2 {
   font-family: Plafair;
@@ -189,10 +228,13 @@ body .contenedor_ppal main .direccion h2 {
   line-height: 50%;
   font-size: 1.5em;
   padding-bottom: 0.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 body .contenedor_ppal main .direccion p {
   font-size: 14px;
   width: 90%;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 900px) {
   body .contenedor_ppal main .direccion p {
@@ -236,6 +278,8 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
   font-style: normal;
   font-size: 10px;
   text-wrap: balance;
+  line-height: normal;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 410px) {
   body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
@@ -266,7 +310,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-ce
   border: none;
   box-shadow: 1px 1px 1px #fff;
   border-radius: 50%;
-  padding: 0.1em 0.5em;
+  padding: 0.1em 0.6em;
   cursor: pointer;
 }
 @media screen and (min-width: 650px) {
@@ -289,7 +333,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
 body .contenedor_ppal main .docentes {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 0 2em;
   gap: 2em;
 }
 body .contenedor_ppal main .docentes h2 {
@@ -315,6 +359,7 @@ body .contenedor_ppal main .docentes .profe .profe-info p {
   font-family: Roboto;
   font-size: 10px;
   text-wrap: balance;
+  margin-bottom: 0;
 }
 body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(1) {
   font-weight: 600;
@@ -361,7 +406,7 @@ body .contenedor_ppal main .form {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  padding: 2em 0;
+  padding: 0;
   /*Mediaqueries */
 }
 body .contenedor_ppal main .form .form_title {
@@ -474,12 +519,11 @@ body .contenedor_ppal footer .contain-footer {
   }
 }
 body .contenedor_ppal footer .contain-footer .logos_footer {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.3em;
 }
 body .contenedor_ppal footer .contain-footer .logos_footer a {
   color: #ffffff;
@@ -496,16 +540,16 @@ body .contenedor_ppal footer .contain-footer .logos_footer a {
 body .contenedor_ppal footer .contain-footer .info_footer {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
 }
 body .contenedor_ppal footer .contain-footer .info_footer .redes_footer {
   display: flex;
-  gap: 0.5em;
+  gap: 0.3em;
 }
 body .contenedor_ppal footer .contain-footer .info_footer p {
   font-size: 0.6em;
   font-family: Roboto;
   font-weight: 400;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 500px) {
   body .contenedor_ppal footer .contain-footer .info_footer p {

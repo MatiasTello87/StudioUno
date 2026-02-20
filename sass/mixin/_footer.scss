@@ -23,32 +23,34 @@
           width: 60%;
         }
        .logos_footer{
-        @include barra();
-        flex-direction: column;
-        align-items: flex-start;
-        a{
-            color: $blanco;
-            text-decoration: none;
-            font-family: Roboto;
-            font-weight: 400;
-            font-size: .8em;
-            @include mobil-medium(){
-                font-size: 1em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .3em;
+            a{
+                color: $blanco;
+                text-decoration: none;
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: .8em;
+                @include mobil-medium(){
+                    font-size: 1em;
+                }
             }
-        }
         }
         .info_footer{
             display: flex;
             flex-direction: column;
-            gap: .3em;
             .redes_footer{
                 display: flex;
-                gap: .5em;
+                gap: .3em;
             }
             p{
                 font-size: .6em;
                 font-family: Roboto;
                 font-weight: 400;
+                margin-bottom: 0;
                 @include mobil-medium(){
                     font-size: 0.8em;
                 }

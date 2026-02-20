@@ -1,7 +1,7 @@
 @mixin docentes(){
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 0  2em;
   gap: 2em;
   h2{
     @include font-title-seccion();
@@ -20,6 +20,7 @@
         font-family: Roboto;
         font-size: 10px;
         text-wrap: balance;
+        margin-bottom: 0;
       }
       p:nth-child(1){
         font-weight: 600;
