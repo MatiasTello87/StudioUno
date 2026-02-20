@@ -17,6 +17,9 @@
             width: 85%;
         }
         @include tablet(){
+          width: 70%;
+        }
+        @include desktop(){
           width: 60%;
         }
        .logos_footer{
