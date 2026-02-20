@@ -333,7 +333,7 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
 body .contenedor_ppal main .docentes {
   display: flex;
   flex-direction: column;
-  padding: 0 2em;
+  padding: 0 1em;
   gap: 2em;
 }
 body .contenedor_ppal main .docentes h2 {

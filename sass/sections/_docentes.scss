@@ -1,7 +1,7 @@
 @mixin docentes(){
   display: flex;
   flex-direction: column;
-  padding: 0  2em;
+  padding: 0  1em;
   gap: 2em;
   h2{
     @include font-title-seccion();
