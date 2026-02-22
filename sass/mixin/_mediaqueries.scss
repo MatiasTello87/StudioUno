@@ -1,3 +1,4 @@
+
 @mixin mobil-smaller {
 	@media screen and (min-width: 375px){
 			@content;
@@ -19,7 +20,7 @@
 	}
 }
 @mixin desktop{
-	@media screen and (min-width: 900px){
+	@media screen and (min-width: 992px){
 		@content;
 	}
 }

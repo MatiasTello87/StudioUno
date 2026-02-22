@@ -1,58 +1,92 @@
 @mixin docentes(){
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0  1em;
   gap: 2em;
   h2{
+    scroll-margin-top: 130px;
     @include font-title-seccion();
   }
-  .profe{
+  .contain-profes{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1em;
-    .profe-info{
-      // width: 100%;
+    gap: 2.5em;
+    align-items: center;
+    padding: 0 1em;
+    .profe{
+      width: fit-content;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      p{
-        font-family: Roboto;
-        font-size: 10px;
-        text-wrap: balance;
-        margin-bottom: 0;
-      }
-      p:nth-child(1){
-        font-weight: 600;
-        font-size: 14px;
-      }
-      
-      p:nth-child(2){
-        color: rgb(45, 45, 45);
-      }
-      p:nth-child(3){
-        margin-top: 1em;
-        font-size: 11px;
-        @include mobil-medium(){
-          font-size: 12px;
+      justify-content: center;
+      gap: 1em;
+      img{
+        @include desktop(){
+            width: 100%;
+            // width: 10%;
+          }
         }
+
+      .profe-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+          font-family: Roboto;
+          font-size: 10px;
+          text-wrap: balance;
+          margin-bottom: 0;
+        }
+        p:nth-child(1){
+          font-weight: 600;
+          font-size: 14px;
+        }
+        
+        p:nth-child(2){
+          color: rgb(45, 45, 45);
+        }
+        p:nth-child(3){
+          margin-top: 1em;
+          font-size: 11px;
+          @include mobil-medium(){
+            font-size: 12px;
+          }
+        }
+        // Mediaquerie del profe-info
+        @include mobil-smaller(){
+          align-items: start;
+        }
+        @include tablet(){
+          max-width: 100%;
+        }
+        // @include desktop(){
+        //   max-width: 30%;
+        // }
       }
-      // Mediaquerie del profe-info
+      // Mediaquerie profe
       @include mobil-smaller(){
+        flex-direction: row;
+        text-align: start;
         align-items: start;
       }
-      @include tablet(){
-        max-width: 40%;
-      }
-      @include desktop(){
-        max-width: 30%;
+       // CAMBIO: En desktop, cada "tarjeta" de profe debe tener un ancho definido
+      @include desktop() {
+        flex-direction: column;
+        width: calc(50% - 1.5em); // Para que entren 3 por fila restando el gap
+        // min-width: 280px; // Evita que se aplasten mucho
       }
     }
-    // Mediaquerie profe
-    @include mobil-smaller(){
+     @include desktop() {
       flex-direction: row;
-      text-align: start;
-      align-items: start;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      align-items: flex-start;
+      justify-content: center; // Centra las cajas si no llenan toda la fila
+      width: 60%; 
     }
   }
 }
+
+

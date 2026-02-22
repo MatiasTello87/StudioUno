@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body .contenedor_ppal {
   max-width: 100%;
   min-height: 100dvh;
@@ -37,6 +41,22 @@ body .contenedor_ppal header .header-icons {
   justify-content: space-between;
   align-items: center;
 }
+body .contenedor_ppal header .header-icons .navbar-desktop {
+  display: none;
+}
+body .contenedor_ppal header .header-icons .navbar-desktop a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #000000;
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal header .header-icons .navbar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+}
 @media screen and (min-width: 650px) {
   body .contenedor_ppal header .header-icons {
     width: 80%;
@@ -44,6 +64,16 @@ body .contenedor_ppal header .header-icons {
 }
 body .contenedor_ppal header img {
   max-width: 5em;
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal header img {
+    max-width: 8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal header {
+    height: 64px;
+  }
 }
 body .contenedor_ppal header img {
   width: 10em;
@@ -125,10 +155,20 @@ body .contenedor_ppal header .navbar .contain-navbar .nav-links li button {
   padding: 0.3em 0.5em;
   cursor: pointer;
 }
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal header .navbar .contain-navbar {
+    justify-content: space-around;
+  }
+}
 body .contenedor_ppal header .navbar .contain-navbar.active {
   right: 0;
   opacity: 1;
   pointer-events: auto;
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal header .navbar {
+    display: none;
+  }
 }
 body .contenedor_ppal main {
   width: 100%;
@@ -139,7 +179,7 @@ body .contenedor_ppal main {
   justify-content: center;
   align-items: center;
   gap: 5em;
-  padding: 1em 0;
+  padding: 5em 0;
   padding-top: 56px;
   text-align: center;
 }
@@ -155,7 +195,8 @@ body .contenedor_ppal main .inicio {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  padding: 3em 0em 0em;
+  gap: 2em;
+  padding: 4em 0em 0em;
   width: 100%;
 }
 body .contenedor_ppal main .inicio h1 {
@@ -204,9 +245,9 @@ body .contenedor_ppal main .inicio p {
   padding: 0 2em;
   margin-bottom: 0;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   body .contenedor_ppal main .inicio p {
-    width: 50%;
+    width: 70%;
   }
 }
 body .contenedor_ppal main .inicio video {
@@ -230,28 +271,36 @@ body .contenedor_ppal main .direccion h2 {
   padding-bottom: 0.5em;
   padding-bottom: 0;
   margin-bottom: 0;
+  scroll-margin-top: 130px;
 }
 body .contenedor_ppal main .direccion p {
   font-size: 14px;
   width: 90%;
   margin-bottom: 0;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   body .contenedor_ppal main .direccion p {
-    width: 50%;
+    width: 70%;
   }
 }
-body .contenedor_ppal main .direccion .contain-img-btnvermas {
+body .contenedor_ppal main .direccion .cont-imgs-direc {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  /*Mediaqueries container de imgs de directoras*/
+}
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas {
   position: relative; /* ¡Fundamental! Es la base del botón */
   width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
   overflow: hidden; /* Por si quieres efectos de bordes redondeados */
 }
-body .contenedor_ppal main .direccion .contain-img-btnvermas .img-direc {
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .img-direc {
   display: block;
   max-width: 100%;
   height: auto;
 }
-body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto {
   position: absolute;
   top: 0;
   left: 0;
@@ -269,11 +318,11 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto {
   visibility: hidden;
   transition: opacity 0.4s ease;
 }
-body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto.activo {
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto.activo {
   opacity: 1;
   visibility: visible;
 }
-body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto p {
   width: 95%;
   font-style: normal;
   font-size: 10px;
@@ -282,23 +331,18 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
   margin-bottom: 0;
 }
 @media screen and (min-width: 410px) {
-  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+  body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto p {
     width: 90%;
     max-width: 90%;
     font-size: 11px;
   }
 }
 @media screen and (min-width: 500px) {
-  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
+  body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto p {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 900px) {
-  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto p {
-    font-size: 14px;
-  }
-}
-body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
   z-index: 2;
   position: absolute;
   right: 1.5em;
@@ -314,29 +358,37 @@ body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-ce
   cursor: pointer;
 }
 @media screen and (min-width: 650px) {
-  body .contenedor_ppal main .direccion .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
+  body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
     right: 2em;
     bottom: 1.5em;
   }
 }
-body .contenedor_ppal main .direccion .contain-img-btnvermas .btn-vermas {
+body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .btn-vermas {
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   right: 5%;
-  padding: 0.3em 0.5em;
+  padding: 0.1em 0.3em;
   color: #BF8FC4;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 50px;
 }
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .direccion .cont-imgs-direc {
+    flex-direction: row;
+    width: 90%;
+  }
+}
 body .contenedor_ppal main .docentes {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0 1em;
   gap: 2em;
 }
 body .contenedor_ppal main .docentes h2 {
+  scroll-margin-top: 130px;
   font-family: Plafair;
   font-style: normal;
   font-weight: 400;
@@ -344,59 +396,84 @@ body .contenedor_ppal main .docentes h2 {
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
-body .contenedor_ppal main .docentes .profe {
+body .contenedor_ppal main .docentes .contain-profes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  align-items: center;
+  padding: 0 1em;
+}
+body .contenedor_ppal main .docentes .contain-profes .profe {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1em;
 }
-body .contenedor_ppal main .docentes .profe .profe-info {
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .docentes .contain-profes .profe img {
+    width: 100%;
+  }
+}
+body .contenedor_ppal main .docentes .contain-profes .profe .profe-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .contenedor_ppal main .docentes .profe .profe-info p {
+body .contenedor_ppal main .docentes .contain-profes .profe .profe-info p {
   font-family: Roboto;
   font-size: 10px;
   text-wrap: balance;
   margin-bottom: 0;
 }
-body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(1) {
+body .contenedor_ppal main .docentes .contain-profes .profe .profe-info p:nth-child(1) {
   font-weight: 600;
   font-size: 14px;
 }
-body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(2) {
+body .contenedor_ppal main .docentes .contain-profes .profe .profe-info p:nth-child(2) {
   color: rgb(45, 45, 45);
 }
-body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
+body .contenedor_ppal main .docentes .contain-profes .profe .profe-info p:nth-child(3) {
   margin-top: 1em;
   font-size: 11px;
 }
 @media screen and (min-width: 500px) {
-  body .contenedor_ppal main .docentes .profe .profe-info p:nth-child(3) {
+  body .contenedor_ppal main .docentes .contain-profes .profe .profe-info p:nth-child(3) {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 375px) {
-  body .contenedor_ppal main .docentes .profe .profe-info {
+  body .contenedor_ppal main .docentes .contain-profes .profe .profe-info {
     align-items: start;
   }
 }
 @media screen and (min-width: 650px) {
-  body .contenedor_ppal main .docentes .profe .profe-info {
-    max-width: 40%;
-  }
-}
-@media screen and (min-width: 900px) {
-  body .contenedor_ppal main .docentes .profe .profe-info {
-    max-width: 30%;
+  body .contenedor_ppal main .docentes .contain-profes .profe .profe-info {
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 375px) {
-  body .contenedor_ppal main .docentes .profe {
+  body .contenedor_ppal main .docentes .contain-profes .profe {
     flex-direction: row;
     text-align: start;
     align-items: start;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .docentes .contain-profes .profe {
+    flex-direction: column;
+    width: calc(50% - 1.5em);
+  }
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .docentes .contain-profes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
   }
 }
 body .contenedor_ppal main .form {
@@ -477,7 +554,7 @@ body .contenedor_ppal main .form .text_inputs .inputs button {
     width: 90%;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   body .contenedor_ppal main .form {
     width: 70%;
   }
@@ -513,7 +590,7 @@ body .contenedor_ppal footer .contain-footer {
     width: 70%;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   body .contenedor_ppal footer .contain-footer {
     width: 60%;
   }

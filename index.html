@@ -11,9 +11,17 @@
 </head>
 <body>
     <div class="contenedor_ppal">
+        <!-- Header -->
         <header>
             <div class="header-icons">
                 <a href="index.html"><img src="./assets/icons/Recurso 3LOGOTIPO NEGRO sin fondo.png" alt="logo"></a>
+                <!-- Navbar desktop -->
+                <nav class="navbar-desktop">
+                    <a href="#">Inicio</a>
+                    <a href="#direccion">Dirección Artística</a>
+                    <a href="#docentes">Equipo Docente</a>
+                    <a href="#form">Contacto</a>
+                </nav>
                 <nav class="navbar">
                     <button class="nav-toggle" id="btn-hamb"><span id="nav-span">☰</span>
                     </button>
@@ -43,6 +51,7 @@
             </div>
         </header>
         <main>
+            <!-- Inicio -->
             <section class="inicio" id="inicio">
                 <h1>La mejor manera de crecer en el arte de la danza</h1>
                 <div class="carrusel">
@@ -91,11 +100,15 @@
                 </div>
                 <!-- <img src="./assets/img/fotos.svg" alt="foto 1"> -->
                <p>STUDIO UNO es un instituto de formación en danza clásica y contemporánea con una trayectoria ininterrumpida desde el año 1985. A lo largo de más de 40 años, la institución se ha consolidado como un espacio de referencia en la enseñanza de la danza. Formando artistas comprometidos con el movimiento, la sensibilidad y la excelencia. El estudio fue fundado por Alejandra Lloveras y Celina Castro, quienes continúan ejerciendo la dirección hasta la actualidad. Sosteniendo el proyecto pedagógico y artístico que dio origen a la institución. Durante estas cuatro décadas, STUDIO UNO ha formado a numerosos bailarines. Que continuaron su desarrollo artístico y profesional tanto a nivel nacional como internacional. De esta institución surgieron 30 promociones de egresados de maestros en danza. Con un total aproximado de 253 alumnos, reflejo de un trabajo constante y comprometido con la formación integral.</p>
+              
             </section>
+             <!-- div como apuntalador de secciones -->
+            <!-- Dirección -->
             <section class="direccion" >
-                <h2>Direccion Artística</h2>
-                <p id="direccion">La propuesta educativa de STUDIO UNO se basa en una formación sólida en técnica clásica y contemporánea, integrada con el desarrollo artístico, expresivo y humano de cada alumno. El proceso de enseñanza prioriza el trabajo consciente, la disciplina y el respeto por el cuerpo, acompañando a cada estudiante en su propio camino de aprendizaje.</p>
-                <div class="contain-img-btnvermas">
+                <h2 id="direccion">Direccion Artística</h2>
+                <p>La propuesta educativa de STUDIO UNO se basa en una formación sólida en técnica clásica y contemporánea, integrada con el desarrollo artístico, expresivo y humano de cada alumno. El proceso de enseñanza prioriza el trabajo consciente, la disciplina y el respeto por el cuerpo, acompañando a cada estudiante en su propio camino de aprendizaje.</p>
+                <div class="cont-imgs-direc">
+                    <div class="contain-img-btnvermas">
                     <img class="img-direc" src="./assets/img/profe/ale-direc.svg" alt="Alejandra Lloveras">
                     <div class="capa-texto">
                         <p>María Alejandra Lloveras es profesora y referente de la danza clásica y contemporánea en la provincia de San Juan. Inició su formación en danza en 1972 y egresó en 1984 como Profesora de Danza Clásica. Se perfeccionó con destacados maestros nacionales e internacionales, desarrollando una sólida trayectoria artística y pedagógica.
@@ -104,8 +117,8 @@
                         <button class="btn-cerrar-overlay">x</button>
                     </div>
                     <button class="btn-vermas">Ver más</button>
-                </div>
-                <div class="contain-img-btnvermas">
+                    </div>
+                    <div class="contain-img-btnvermas">
                     <img class="img-direc" src="./assets/img/profe/celi-direc.svg" alt="Celina Castro">
                     <div class="capa-texto">
                         <p>María Celina Castro es profesora y referente de la danza clásica y contemporánea en la provincia de San Juan. Inició su formación en danza en 1962 y se graduó como Profesora de Danza Clásica en 1995, con titulación otorgada por la Federación Francesa de Danza Clásica y Contemporánea. Se perfeccionó con destacados maestros internacionales como Ethel Lynch, Alexander Plisetsky y Wasil Tupin.
@@ -114,67 +127,88 @@
                         <button class="btn-cerrar-overlay">x</button>
                     </div>
                     <button class="btn-vermas">Ver más</button>
+                    </div>
                 </div>
+                
             </section>
-            <section class="docentes" id="docentes">
-                <h2>Nuestro equipo docente</h2>
-                <div class="profe">
-                    <img src="./assets/img/profe/cami.svg" alt="Camila Quiroga">
-                    <div class="profe-info">
-                        <p>Camila Quiroga</p>
-                        <p>Docente de danza clásica</p>
-                        <p>Desde 2025 se desempeña en la enseñanza a niñas y niños de entre 3 y 7 años, con foco en el desarrollo técnico y artístico. Se formó en ballet en Studio Uno entre 2013 y 2023, finalizando como profesora de danzas clásicas, y ha participado activamente en instancias de supervisión, evaluación y mejora del desempeño institucional.
-                        </p>
+            <!-- div como apuntalador de secciones -->
+            
+            <!-- Docentes -->
+            <section class="docentes">
+                <h2 id="docentes">Nuestro equipo docente</h2>
+                <!-- Cami - Valle -->
+                <div class="contain-profes">
+                    <!-- Cami -->
+                    <div class="profe">
+                        <img src="./assets/img/profe/cami.svg" alt="Camila Quiroga">
+                        <div class="profe-info">
+                            <p>Camila Quiroga</p>
+                            <p>Docente de danza clásica</p>
+                            <p>Desde 2025 se desempeña en la enseñanza a niñas y niños de entre 3 y 7 años, con foco en el desarrollo técnico y artístico. Se formó en ballet en Studio Uno entre 2013 y 2023, finalizando como profesora de danzas clásicas, y ha participado activamente en instancias de supervisión, evaluación y mejora del desempeño institucional.
+                            </p>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-                <div class="profe">
-                    <img src="./assets/img/profe/valle.svg" alt="Maria del Valle Montes">
-                    <div class="profe-info">
-                        <p>María del Valle Montes</p>
-                        <p>Docente de danza clásica</p>
-                        <p>Bailarina profesional del Teatro del Bicentenario (desde 2018) y del Ballet Oficial de Córdoba (2024). Se formó en Studio Uno y, desde muy temprana edad, participó en producciones como El lago de los cisnes y Cascanueces. Ha sido ganadora de múltiples premios y becas en reconocimiento a su trayectoria artística.</p>
+                    <!-- Valle -->
+                     <div class="profe">
+                        <img src="./assets/img/profe/valle.svg" alt="Maria del Valle Montes">
+                        <div class="profe-info">
+                            <p>María del Valle Montes</p>
+                            <p>Docente de danza clásica</p>
+                            <p>Bailarina profesional del Teatro del Bicentenario (desde 2018) y del Ballet Oficial de Córdoba (2024). Se formó en Studio Uno y, desde muy temprana edad, participó en producciones como El lago de los cisnes y Cascanueces. Ha sido ganadora de múltiples premios y becas en reconocimiento a su trayectoria artística.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="profe">
-                    <img src="./assets/img/profe/mile.svg" alt="Melina Martín">
-                    <div class="profe-info">
-                        <p>Milena Martín</p>
-                        <p>Docente de danza clásica</p>
-                        <p>
-                        Bailarina formada en danza clásica y contemporánea en Studio Uno, egresada en 2025. Integró durante tres años el Programa de Formación Profesional para Bailarines del Teatro del Bicentenario de San Juan, participando en instancias de formación con destacados maestros. Actualmente continúa profundizando su formación y búsqueda escénica.
-                        </p>
+                
+                <!-- Mile - Memi -->
+                
+                    <!-- Mile -->
+                    <div class="profe">
+                        <img src="./assets/img/profe/mile.svg" alt="Melina Martín">
+                        <div class="profe-info">
+                            <p>Milena Martín</p>
+                            <p>Docente de danza clásica</p>
+                            <p>
+                            Bailarina formada en danza clásica y contemporánea en Studio Uno, egresada en 2025. Integró durante tres años el Programa de Formación Profesional para Bailarines del Teatro del Bicentenario de San Juan, participando en instancias de formación con destacados maestros. Actualmente continúa profundizando su formación y búsqueda escénica.
+                            </p>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-                <div class="profe">
-                    <img src="./assets/img/profe/memi.svg" alt="Mercedes Claudeville">
-                    <div class="profe-info">
-                        <p>Mercedes Claudeville</p>
-                        <p>Docente de danza contemporánea</p>
-                        <p>Artista que se desempeña como bailarina, coreógrafa, investigadora y gestora. Formada en danza clásica y contemporánea en Studio Uno, concibe la danza como un espacio de reflexión y creación. Integra proyectos de formación e investigación y, desde 2010, forma parte del equipo docente de Studio Uno. Es gestora del festival de danza independiente CRUDO y actualmente desarrolla su primer solo coreográfico, Corcel Negro, ganador de la Beca Creación 2022 del Fondo Nacional de las Artes.</p>
+                    <!-- Memi -->
+                    <div class="profe">
+                        <img src="./assets/img/profe/memi.svg" alt="Mercedes Claudeville">
+                        <div class="profe-info">
+                            <p>Mercedes Claudeville</p>
+                            <p>Docente de danza contemporánea</p>
+                            <p>Artista que se desempeña como bailarina, coreógrafa, investigadora y gestora. Formada en danza clásica y contemporánea en Studio Uno, concibe la danza como un espacio de reflexión y creación. Integra proyectos de formación e investigación y, desde 2010, forma parte del equipo docente de Studio Uno. Es gestora del festival de danza independiente CRUDO y actualmente desarrolla su primer solo coreográfico, Corcel Negro, ganador de la Beca Creación 2022 del Fondo Nacional de las Artes.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="profe">
-                    <img src="./assets/img/profe/lean.svg" alt="Lean Bustos">
-                    <div class="profe-info">
-                        <p>Lean Bustos</p>
-                        <p>Docente de danza contemporánea</p>
-                        <p>
-                        Bailarín y creador formado en folclore y danza contemporánea, con estudios en la Fundación Julio Bocca y junto a David Señorán. Integró diversas compañías y elencos nacionales, y participó en producciones del Teatro General San Martín, el Teatro del Bicentenario de San Juan y el Ballet Oficial de Cosquín. Cofundador del colectivo Agitando el Nido desde 2019, desarrolla procesos creativos y pedagógicos que conciben la danza como un espacio de intercambio y construcción colectiva.
-                        </p>
+                
+                <!-- Lean- Mati -->
+                
+                    <!-- Lean -->
+                    <div class="profe">
+                        <img src="./assets/img/profe/lean.svg" alt="Lean Bustos">
+                        <div class="profe-info">
+                            <p>Lean Bustos</p>
+                            <p>Docente de danza contemporánea</p>
+                            <p>
+                            Bailarín y creador formado en folclore y danza contemporánea, con estudios en la Fundación Julio Bocca y junto a David Señorán. Integró diversas compañías y elencos nacionales, y participó en producciones del Teatro General San Martín, el Teatro del Bicentenario de San Juan y el Ballet Oficial de Cosquín. Cofundador del colectivo Agitando el Nido desde 2019, desarrolla procesos creativos y pedagógicos que conciben la danza como un espacio de intercambio y construcción colectiva.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="profe">
-                    <img src="./assets/img/profe/mati.svg" alt="Matías Tello">
-                    <div class="profe-info">
-                        <p>Matías Tello</p>
-                        <p>Docente de danza contemporánea</p>
-                        <p>Creador y bailarín de la escena local, formado en folclore, jazz, clásico y danza contemporánea entre San Juan y Buenos Aires. Se formó en el Teatro Colón y en el Taller de Danza Contemporánea del Teatro General San Martín. Ha impulsado colectivos artísticos como creador, gestor e intérprete, y concibe la práctica docente como un espacio de exploración, guía y aprendizaje compartido.</p>
+                     <!-- Mati -->
+                    <div class="profe">
+                        <img src="./assets/img/profe/mati.svg" alt="Matías Tello">
+                        <div class="profe-info">
+                            <p>Matías Tello</p>
+                            <p>Docente de danza contemporánea</p>
+                            <p>Creador y bailarín de la escena local, formado en folclore, jazz, clásico y danza contemporánea entre San Juan y Buenos Aires. Se formó en el Teatro Colón y en el Taller de Danza Contemporánea del Teatro General San Martín. Ha impulsado colectivos artísticos como creador, gestor e intérprete, y concibe la práctica docente como un espacio de exploración, guía y aprendizaje compartido.</p>
+                        </div>
                     </div>
-                    
-                </div>
+                </div>       
             </section>
+
+            <!-- Contacto -->
             <section class="form" id="form">
                 <div class="form_title">
                     <h3>¿Querés formar parte de Studio Uno?</h3>
@@ -190,8 +224,17 @@
                         <button type="submit" id="btn-enviar">Enviar</button>
                     </div>
                 </div>
+
+                <!-- <div class="watsapp">
+                    <a href="https://wa.me/5492645293298?text=Hola!%20Me%20interesa%20consultar%20por..." class="btn-whatsapp" target="_blank">
+                    <svg width="30" height="30" viewBox="0 0 448 512" fill="black">
+                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4  0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.4 2.5-2.5 5.5-6.5 8.3-9.8 2.8-3.3 3.7-5.6 5.5-9.3 1.8-3.7.9-6.9-.5-9.8-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    </a>
+                </div> -->
             </section>
         </main>
+        <!-- Footer -->
         <footer>
             <div class="contain-footer">
                 <div class="logos_footer">

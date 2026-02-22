@@ -77,8 +77,11 @@
                     padding: .3em .5em;
                     cursor: pointer;
                 }
-               
             }
+        }
+        @include desktop(){
+            // width: 70%;
+            justify-content: space-around;
         }
     
     }
@@ -88,5 +91,8 @@
         pointer-events: auto; // Permite clics cuando está activo
     }
   
-    
+    // Mediaquerie y lógica de cambio del navbar de mobil a compu
+    @include desktop(){
+        display: none;
+    }
 }

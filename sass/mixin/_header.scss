@@ -17,6 +17,22 @@ $alt-header: 56px;
    z-index: 5;
 
    .header-icons{
+      .navbar-desktop{
+         display: none; //estado inicial
+         a{
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 400;
+            color: $negro;
+
+         }
+
+         @include desktop(){ //activo
+            display: flex;
+            align-items: center;
+            gap: 2em;
+         }
+      }
       @include barra();
       // Mediaquerie
       @include tablet(){
@@ -26,7 +42,12 @@ $alt-header: 56px;
    }
    img{
       max-width: 5em;
+      @include desktop(){
+         max-width: 8em;
+      }
    }
 
-  
+  @include desktop(){
+   height: 64px;
+  }
 }

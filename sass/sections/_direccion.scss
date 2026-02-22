@@ -7,97 +7,106 @@
     @include font-title-seccion();
     padding-bottom: 0;
     margin-bottom: 0;
+    scroll-margin-top: 130px;
   }
   p{
     font-size: 14px;
     width: 90%;
     margin-bottom: 0;
     @include desktop(){
-      width: 50%;
+      width: 70%;
     }
   }
-  .contain-img-btnvermas {
-  position: relative; /* ¡Fundamental! Es la base del botón */
-  width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
-  overflow: hidden;   /* Por si quieres efectos de bordes redondeados */
-  .img-direc{
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .capa-texto{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); // Fondo negro con 70% de opacidad
-    color: white;
+  .cont-imgs-direc{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 1em;
     align-items: center;
-    padding: 0.5em 0.5em 1.5em;
-    gap: .5em;
-    // estado oculto
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease;
-    &.activo {
-      opacity: 1;
-      visibility: visible;
-    }
-      
-    p{
-      width: 95%;
-      font-style: normal;
-      font-size: 10px;
-      text-wrap: balance;
-      line-height: normal;
-      margin-bottom: 0;
-      @include mobil(){
-        width: 90%;
-        max-width: 90%;
-        font-size: 11px;
+    .contain-img-btnvermas {
+      position: relative; /* ¡Fundamental! Es la base del botón */
+      width: fit-content; /* El contenedor se ajusta al tamaño de la imagen */
+      overflow: hidden;   /* Por si quieres efectos de bordes redondeados */
+      .img-direc{
+        display: block;
+        max-width: 100%;
+        height: auto;
       }
-      @include mobil-medium(){
-        font-size: 12px;
+      .capa-texto{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); // Fondo negro con 70% de opacidad
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 0.5em 1.5em;
+        gap: .5em;
+        // estado oculto
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease;
+        &.activo {
+        opacity: 1;
+        visibility: visible;
+        }
+        p{
+          width: 95%;
+          font-style: normal;
+          font-size: 10px;
+          text-wrap: balance;
+          line-height: normal;
+          margin-bottom: 0;
+          @include mobil(){
+            width: 90%;
+            max-width: 90%;
+            font-size: 11px;
+          }
+          @include mobil-medium(){
+            font-size: 12px;
+          }
+        }
+        .btn-cerrar-overlay{
+          z-index: 2;
+          position: absolute;
+          right: 1.5em;
+          bottom: .8em;
+          font-family: Roboto;
+          font-size: 1em; 
+          color: $blanco;
+          background-color: transparent;
+          border: none;
+          box-shadow: 1px 1px 1px #fff;
+          border-radius: 50%;
+          padding: .1em .6em;
+          cursor: pointer;
+          @include tablet(){
+            right: 2em;
+            bottom: 1.5em;
+          }
+        }
       }
-      @include desktop(){
-        font-size: 14px;
-      }
-    }
-    .btn-cerrar-overlay{
-      z-index: 2;
-      position: absolute;
-      right: 1.5em;
-      bottom: .8em;
-      font-family: Roboto;
-      font-size: 1em; 
-      color: $blanco;
-      background-color: transparent;
-      border: none;
-      box-shadow: 1px 1px 1px #fff;
-      border-radius: 50%;
-      padding: .1em .6em;
-      cursor: pointer;
-      @include tablet(){
-        right: 2em;
-        bottom: 1.5em;
-      }
-    }
-  }
-    .btn-vermas{
+      .btn-vermas{
       position: absolute; 
-      bottom: 5%;           
+      bottom: 4%;           
       right: 5%;          
-      padding: .3em .5em;
+      padding: .1em .3em;
       color: $rosa;
       border: none;
       background-color: $blanco;
       cursor: pointer;
       border-radius: 50px;
+      }
+    }
+    /*Mediaqueries container de imgs de directoras*/
+    @include desktop(){
+      flex-direction: row;
+      width: 90%;
     }
   }
+  
    
 }
