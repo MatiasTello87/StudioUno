@@ -67,6 +67,11 @@
           }
           @include mobil-medium(){
             font-size: 12px;
+            line-height: inherit;
+          }
+          @include desktop(){
+            font-size: 10px;
+            line-height: normal;
           }
         }
         .btn-cerrar-overlay{

@@ -195,8 +195,7 @@ body .contenedor_ppal main .inicio {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  gap: 2em;
-  padding: 4em 0em 0em;
+  padding: 2em 0em 0em;
   width: 100%;
 }
 body .contenedor_ppal main .inicio h1 {
@@ -212,38 +211,11 @@ body .contenedor_ppal main .inicio h1 {
     font-size: 2em;
   }
 }
-body .contenedor_ppal main .inicio .carrusel {
-  /* Contenedor del video para manejar las proporciones */
-  /* Proporción para DESKTOP */
-  /* Personalizar flechas para que se vean sobre el video */
+body .contenedor_ppal main .inicio img {
+  width: 90%;
 }
-body .contenedor_ppal main .inicio .carrusel .video-wrapper {
+body .contenedor_ppal main .inicio video {
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #000; /* Fondo negro mientras carga */
-  /* Proporción para MÓVIL (puedes ajustarlo a 9/16 si lo quieres más alto) */
-  aspect-ratio: 4/5;
-}
-body .contenedor_ppal main .inicio .carrusel .video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Esto hace el recorte inteligente */
-  object-position: center;
-}
-@media (min-width: 992px) {
-  body .contenedor_ppal main .inicio .carrusel .video-wrapper {
-    aspect-ratio: 16/9; /* Formato horizontal de cine */
-    max-height: 85vh; /* Para que no tape toda la pantalla */
-  }
-}
-body .contenedor_ppal main .inicio .carrusel .carousel-control-prev-icon,
-body .contenedor_ppal main .inicio .carrusel .carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  background-size: 50%;
 }
 body .contenedor_ppal main .inicio p {
   font-size: 14px;
@@ -254,9 +226,6 @@ body .contenedor_ppal main .inicio p {
   body .contenedor_ppal main .inicio p {
     width: 70%;
   }
-}
-body .contenedor_ppal main .inicio video {
-  background-color: aliceblue;
 }
 body .contenedor_ppal main .direccion {
   width: 100%;
@@ -345,6 +314,13 @@ body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .c
 @media screen and (min-width: 500px) {
   body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto p {
     font-size: 12px;
+    line-height: inherit;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto p {
+    font-size: 10px;
+    line-height: normal;
   }
 }
 body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .capa-texto .btn-cerrar-overlay {
