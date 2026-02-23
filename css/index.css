@@ -505,6 +505,7 @@ body .contenedor_ppal main .form .chat a button {
   align-items: center;
   gap: 1em;
   border: none;
+  background-color: transparent;
 }
 body .contenedor_ppal main .form .chat a button p {
   font-family: Roboto;
