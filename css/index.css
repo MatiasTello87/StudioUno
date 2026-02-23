@@ -333,7 +333,7 @@ body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .c
   color: #ffffff;
   background-color: transparent;
   border: none;
-  box-shadow: 1px 1px 1px #fff;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6117647059);
   border-radius: 50%;
   padding: 0.1em 0.6em;
   cursor: pointer;
@@ -345,10 +345,11 @@ body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .c
   }
 }
 body .contenedor_ppal main .direccion .cont-imgs-direc .contain-img-btnvermas .btn-vermas {
+  font-size: 0.8em;
   position: absolute;
   bottom: 4%;
   right: 5%;
-  padding: 0.1em 0.3em;
+  padding: 0.1em 0.5em;
   color: #BF8FC4;
   border: none;
   background-color: #ffffff;
@@ -491,9 +492,10 @@ body .contenedor_ppal main .form .form_title p {
   }
 }
 body .contenedor_ppal main .form .chat {
-  background-color: #ffffff;
+  border: 0.5px solid rgba(255, 255, 255, 0.568627451);
   padding: 0.5em 0.8em;
   border-radius: 12px;
+  box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.3215686275);
 }
 body .contenedor_ppal main .form .chat a {
   cursor: pointer;
@@ -509,6 +511,7 @@ body .contenedor_ppal main .form .chat a button {
 }
 body .contenedor_ppal main .form .chat a button p {
   font-family: Roboto;
+  color: #ffffff;
   margin-bottom: 0;
   font-weight: 600;
 }

@@ -84,7 +84,7 @@
           color: $blanco;
           background-color: transparent;
           border: none;
-          box-shadow: 1px 1px 1px #fff;
+          box-shadow: 1px 1px 1px #ffffff9c;
           border-radius: 50%;
           padding: .1em .6em;
           cursor: pointer;
@@ -95,10 +95,11 @@
         }
       }
       .btn-vermas{
+        font-size: .8em;
       position: absolute; 
       bottom: 4%;           
       right: 5%;          
-      padding: .1em .3em;
+      padding: .1em .5em;
       color: $rosa;
       border: none;
       background-color: $blanco;
