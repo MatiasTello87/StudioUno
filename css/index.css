@@ -465,7 +465,6 @@ body .contenedor_ppal main .form {
   gap: 1em;
   align-items: center;
   padding: 0;
-  /*Mediaqueries */
 }
 body .contenedor_ppal main .form .form_title {
   text-align: center;
@@ -491,64 +490,26 @@ body .contenedor_ppal main .form .form_title p {
     font-size: 1em;
   }
 }
-body .contenedor_ppal main .form .text_inputs {
-  width: 90%;
-  display: flex;
-  gap: 0.7em;
+body .contenedor_ppal main .form .chat {
+  background-color: #ffffff;
+  padding: 0.5em 0.8em;
+  border-radius: 12px;
 }
-body .contenedor_ppal main .form .text_inputs textarea {
-  width: calc(50% - 4px);
-  padding: 0.3em 1em;
-  border-radius: 1em;
-  border: none;
-}
-body .contenedor_ppal main .form .text_inputs .inputs {
-  display: flex;
-  flex-direction: column;
-  width: calc(50% - 4px);
-  gap: 0.5em;
-  align-items: center;
-  /* Hace que el placeholder sea más claro 
-  cuando el usuario hace clic */
-}
-body .contenedor_ppal main .form .text_inputs .inputs input {
-  width: 100%;
-  padding: 1em;
-  border: none;
-  border-radius: 1em;
-  font-size: 0.5em;
-}
-body .contenedor_ppal main .form .text_inputs .inputs input::placeholder,
-body .contenedor_ppal main .form .text_inputs .inputs textarea::placeholder {
-  color: #888;
-  font-style: italic;
-  font-family: "Arial", sans-serif;
-  opacity: 1; /* Importante para Firefox, que le baja la opacidad por defecto */
-}
-body .contenedor_ppal main .form .text_inputs .inputs textarea:focus::placeholder,
-body .contenedor_ppal main .form .text_inputs .inputs input:focus::placeholder {
-  color: transparent;
-  transition: color 0.3s ease;
-}
-body .contenedor_ppal main .form .text_inputs .inputs button {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 0.5em;
-  padding: 0.5em 4em;
-  background-color: #000000;
-  color: #ffffff;
+body .contenedor_ppal main .form .chat a {
   cursor: pointer;
-  border-radius: 30px;
+  text-decoration: none;
 }
-@media screen and (min-width: 650px) {
-  body .contenedor_ppal main .form {
-    width: 90%;
-  }
+body .contenedor_ppal main .form .chat a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border: none;
 }
-@media screen and (min-width: 992px) {
-  body .contenedor_ppal main .form {
-    width: 70%;
-  }
+body .contenedor_ppal main .form .chat a button p {
+  font-family: Roboto;
+  margin-bottom: 0;
+  font-weight: 600;
 }
 body .contenedor_ppal footer {
   display: flex;

@@ -25,67 +25,26 @@
     }
     // background-color: rgb(208, 173, 203);
   }
-  .text_inputs{
-    width: 90%;
-    display: flex;
-    gap: .7em;
-    // padding: 0 2em;
-    // width: 700px;
-    // background-color: rgb(11, 46, 200);
-    textarea{
-      width: calc(50% - 4px);
-      padding: .3em 1em;
-      border-radius: 1em;
-      border: none;
-      // font-size: .7em;
-
-    }
-    .inputs{
-      // @include box-layout;
-      display: flex;
-      flex-direction: column;
-      width: calc(50% - 4px);
-      gap: .5em;
-      align-items: center;
-      input{
-        width: 100%;
-        padding: 1em;
-        border: none;
-        border-radius: 1em;
-        font-size: 0.5em;
-      }
-      // Aplica a lo do elemento
-      input::placeholder, 
-      textarea::placeholder {
-        color: #888;
-        font-style: italic;    
-        font-family: 'Arial', sans-serif;
-        opacity: 1;           /* Importante para Firefox, que le baja la opacidad por defecto */
-      }
-      /* Hace que el placeholder sea más claro 
-      cuando el usuario hace clic */
-      textarea:focus::placeholder,
-      input:focus::placeholder {
-        color: transparent;
-        transition: color 0.3s ease;
-      }
-      button{
-        font-family: Roboto;
-        font-weight: 400;
-        font-size: .5em;
-        padding: .5em 4em;
-        background-color: $negro;
-        color: $blanco;
+  .chat{
+   
+      background-color: $blanco;
+      padding: .5em .8em;
+      border-radius: 12px;
+      a{
         cursor: pointer;
-        border-radius: 30px;
+        text-decoration: none;
+        button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1em;
+          border: none;
+          p{
+            font-family: Roboto;
+            margin-bottom: 0;
+            font-weight: 600;
+          }
+        }
       }
-    }
   }
-  /*Mediaqueries */
-  @include tablet(){
-    width: 90%;
-  }
-  @include desktop(){
-    width: 70%;
-  }      
 }
