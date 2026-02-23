@@ -6,6 +6,9 @@
   h1{
     @include font-title();
     padding: 0 2em;
+    @include desktop(){
+      font-size: 2em;
+    }
   }
   .carrusel{
     /* Contenedor del video para manejar las proporciones */

@@ -10,11 +10,17 @@
     font-family: Playfair;
     font-weight: 400;
     font-size: 1.4em;
+    @include desktop(){
+      font-size: 2em;
+    }
     }
     p{
       font-family: Roboto;
       font-size: .6em;
       font-style: italic;
+      @include desktop(){
+        font-size: 1em;
+      }
       
     }
     // background-color: rgb(208, 173, 203);

@@ -207,6 +207,11 @@ body .contenedor_ppal main .inicio h1 {
   font-size: 1.5em;
   padding: 0 2em;
 }
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .inicio h1 {
+    font-size: 2em;
+  }
+}
 body .contenedor_ppal main .inicio .carrusel {
   /* Contenedor del video para manejar las proporciones */
   /* Proporción para DESKTOP */
@@ -495,10 +500,20 @@ body .contenedor_ppal main .form .form_title h3 {
   font-weight: 400;
   font-size: 1.4em;
 }
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .form .form_title h3 {
+    font-size: 2em;
+  }
+}
 body .contenedor_ppal main .form .form_title p {
   font-family: Roboto;
   font-size: 0.6em;
   font-style: italic;
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .form .form_title p {
+    font-size: 1em;
+  }
 }
 body .contenedor_ppal main .form .text_inputs {
   width: 90%;
@@ -618,9 +633,24 @@ body .contenedor_ppal footer .contain-footer .info_footer {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal footer .contain-footer .info_footer {
+    gap: 0.3em;
+  }
+}
 body .contenedor_ppal footer .contain-footer .info_footer .redes_footer {
   display: flex;
   gap: 0.3em;
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal footer .contain-footer .info_footer .redes_footer {
+    gap: 0.8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal footer .contain-footer .info_footer .redes_footer img {
+    width: 1.5em;
+  }
 }
 body .contenedor_ppal footer .contain-footer .info_footer p {
   font-size: 0.6em;

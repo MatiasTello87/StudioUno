@@ -42,9 +42,20 @@
         .info_footer{
             display: flex;
             flex-direction: column;
+            @include desktop(){
+                gap: .3em;
+            }
             .redes_footer{
                 display: flex;
                 gap: .3em;
+                @include desktop(){
+                    gap: .8em;
+                }
+                img{
+                    @include desktop(){
+                        width: 1.5em;
+                    }
+                }
             }
             p{
                 font-size: .6em;
