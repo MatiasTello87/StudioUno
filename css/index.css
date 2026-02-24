@@ -275,7 +275,6 @@ body .contenedor_ppal main .inicio .carrusel .carousel-control-next:hover .carou
 }
 body .contenedor_ppal main .inicio .carrusel .carousel-control-prev-icon,
 body .contenedor_ppal main .inicio .carrusel .carousel-control-next-icon {
-  color: aqua;
   padding: 20px;
   width: 1.7rem !important;
   height: 1.7rem !important;
@@ -300,7 +299,7 @@ body .contenedor_ppal main .inicio .carrusel .carousel-control-next-icon {
 body .contenedor_ppal main .inicio p {
   font-size: 14px;
   padding: 0 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   line-height: normal;
 }
 body .contenedor_ppal main .direccion {

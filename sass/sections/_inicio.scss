@@ -102,7 +102,6 @@ $h: 650px;
   // Esta es la forma más moderna de cambiar el color de un SVG sin líos
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    color: aqua;
 
     // 1. Controla el tamaño del círculo (fondo)
     // Antes teníamos 25px o más, bajándolo a 15px se verá más pequeño
@@ -154,7 +153,7 @@ $h: 650px;
   p{
     font-size: 14px;
     padding: 0 1em;
-    margin-top: 2em;
+    margin-top: 1em;
     line-height: normal;
   }  
 }
