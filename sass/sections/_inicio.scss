@@ -85,7 +85,7 @@ $h: 650px;
     // Si quieres un círculo o cuadrado de color alrededor de la flecha:
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      background-color: #515151; // El color del fondo del botón
+      background-color: #222222; // El color del fondo del botón
       border-radius: 50%; // Esto lo hace circular
       padding: 20px;      // Tamaño del fondo
       background-size: 50% 50%; // Tamaño de la flecha dentro del fondo
@@ -102,6 +102,25 @@ $h: 650px;
   // Esta es la forma más moderna de cambiar el color de un SVG sin líos
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
+    color: aqua;
+
+    // 1. Controla el tamaño del círculo (fondo)
+    // Antes teníamos 25px o más, bajándolo a 15px se verá más pequeño
+    padding: 20px; 
+
+    // 2. Controla el tamaño de la flecha propiamente dicha
+    // Por defecto Bootstrap usa 2rem. Bajémoslo a 1.2rem
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+
+    // 3. Ajusta el escalado de la máscara (el dibujo de la flecha)
+    // Esto asegura que la flecha quepa bien dentro de su nuevo tamaño
+    background-size: 100% 100%;
+    
+    // Si usas la técnica de máscara que aplicamos antes:
+    -webkit-mask-size: 1.8rem; // Ajusta este número para "achicar" el dibujo interno
+    mask-size: 1.8rem;
+
     // Quitamos la imagen por defecto de Bootstrap
     background-image: none !important; 
     
@@ -110,7 +129,7 @@ $h: 650px;
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
     mask-position: center;
-    background-color: $color-flecha; // AQUÍ DEFINES EL COLOR DE LA FLECHA
+    background-color: rgb(191, 18, 18); // AQUÍ DEFINES EL COLOR DE LA FLECHA
   }
 
   .carousel-control-prev-icon {
