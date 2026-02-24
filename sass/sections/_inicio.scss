@@ -12,9 +12,9 @@
  
   video{
     width: 90%;
-    // @include desktop(){
-    //   max-width: 700px;
-    // }
+    @include desktop(){
+      max-width: 500px;
+    }
   }
 
   
