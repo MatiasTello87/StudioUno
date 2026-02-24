@@ -9,11 +9,12 @@
       font-size: 2em;
     }
   }
-  img{
-    width: 90%;
-  }
+ 
   video{
-    width: 100%;
+    width: 90%;
+    // @include desktop(){
+    //   max-width: 700px;
+    // }
   }
 
   
@@ -22,10 +23,32 @@
 $color-fondo-boton: rgb(0, 0, 0); // Blanco con transparencia
 $color-flecha: #000; // Rojo (o el color que prefieras)
 $color-fondo-hover: rgba(0, 0, 0, 0.5);
-
+// Variables (asegúrate de que estén definidas)
+$w: 412px;
+$h: 650px;
 #customSlider {
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    // Solo aplicamos flex cuando el slide está activo o en transición
+    display: flex !important; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide-wrapper {
+    // Asegúrate de que los hijos no se "derramen"
+    position: relative;
+    z-index: 1;
+    width: 412px;
+    height: 650px;
+    flex-shrink: 0; // Evita que el flexbox aplaste el diseño en desktop
+    @include desktop(){
+      width: 712px !important;
+    }
+
+  }
   .carousel-item{
-    .slide-wrapper{
       .text-box{
         p{
           margin-top: 1em;
@@ -33,7 +56,25 @@ $color-fondo-hover: rgba(0, 0, 0, 0.5);
         }
       }
     }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    // Solo aplicamos flex cuando el slide está activo o en transición
+    display: flex !important; 
+    justify-content: center;
+    align-items: center;
   }
+
+  .slide-wrapper {
+    // Asegúrate de que los hijos no se "derramen"
+    position: relative;
+    z-index: 1;
+    width: 412px;
+    height: 650px;
+    flex-shrink: 0; // Evita que el flexbox aplaste el diseño en desktop
+  }
+  }
+  
   // 1. Estilo del botón (el contenedor)
   .carousel-control-prev,
   .carousel-control-next {
@@ -86,7 +127,7 @@ $color-fondo-hover: rgba(0, 0, 0, 0.5);
 
 
 // Fin del carrusel
-}
+
 
 
   // Fin del carrusel
@@ -94,8 +135,5 @@ $color-fondo-hover: rgba(0, 0, 0, 0.5);
     font-size: 14px;
     padding: 0 2em;
     margin-bottom: 0;
-    @include desktop(){
-      width: 70%;
-    }
   }  
 }
