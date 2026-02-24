@@ -218,6 +218,7 @@ body .contenedor_ppal main .inicio video {
   width: 100%;
 }
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-item .slide-wrapper .text-box p {
+  margin-top: 1em;
   line-height: normal;
 }
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-control-prev,
