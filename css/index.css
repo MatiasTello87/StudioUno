@@ -217,6 +217,9 @@ body .contenedor_ppal main .inicio img {
 body .contenedor_ppal main .inicio video {
   width: 100%;
 }
+body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-item .slide-wrapper .text-box p {
+  line-height: normal;
+}
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-control-prev,
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-control-next {
   background-color: transparent;

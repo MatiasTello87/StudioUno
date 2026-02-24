@@ -24,7 +24,15 @@ $color-flecha: #000; // Rojo (o el color que prefieras)
 $color-fondo-hover: rgba(0, 0, 0, 0.5);
 
 #customSlider {
-  
+  .carousel-item{
+    .slide-wrapper{
+      .text-box{
+        p{
+          line-height: normal;
+        }
+      }
+    }
+  }
   // 1. Estilo del botón (el contenedor)
   .carousel-control-prev,
   .carousel-control-next {
