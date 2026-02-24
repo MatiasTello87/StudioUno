@@ -208,7 +208,8 @@ body .contenedor_ppal main .inicio h1 {
 }
 @media screen and (min-width: 992px) {
   body .contenedor_ppal main .inicio h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin: 1em 0;
   }
 }
 body .contenedor_ppal main .inicio video {
@@ -321,6 +322,11 @@ body .contenedor_ppal main .direccion h2 {
   padding-bottom: 0;
   margin-bottom: 0;
   scroll-margin-top: 130px;
+}
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .direccion h2 {
+    font-size: 2.5em;
+  }
 }
 body .contenedor_ppal main .direccion p {
   font-size: 14px;
@@ -454,6 +460,11 @@ body .contenedor_ppal main .docentes h2 {
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
+@media screen and (min-width: 992px) {
+  body .contenedor_ppal main .docentes h2 {
+    font-size: 2.5em;
+  }
+}
 body .contenedor_ppal main .docentes .contain-profes {
   width: 100%;
   display: flex;
@@ -554,7 +565,7 @@ body .contenedor_ppal main .form .form_title h3 {
 }
 @media screen and (min-width: 992px) {
   body .contenedor_ppal main .form .form_title h3 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 body .contenedor_ppal main .form .form_title p {
