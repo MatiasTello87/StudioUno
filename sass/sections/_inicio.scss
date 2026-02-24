@@ -15,30 +15,36 @@
   video{
     width: 100%;
   }
+
+  
   .carrusel{
-  // --- VARIABLES DE COLOR ---
-$color-fondo-boton: rgba(25, 25, 25, 0.3); // Blanco con transparencia
-$color-flecha: #0048ff; // Rojo (o el color que prefieras)
-$color-fondo-hover: rgb(22, 12, 135);
+// --- VARIABLES DE COLOR ---
+$color-fondo-boton: rgb(0, 0, 0); // Blanco con transparencia
+$color-flecha: #000; // Rojo (o el color que prefieras)
+$color-fondo-hover: rgba(0, 0, 0, 0.5);
 
 #customSlider {
   
   // 1. Estilo del botón (el contenedor)
   .carousel-control-prev,
   .carousel-control-next {
-    // background-color: transparent; // Por defecto transparente
+    background-color: transparent; // Por defecto transparente
     border: none;
     
     // Si quieres un círculo o cuadrado de color alrededor de la flecha:
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      background-color: #000; // El color del fondo del botón
+      background-color: $color-fondo-boton; // El color del fondo del botón
       border-radius: 50%; // Esto lo hace circular
       padding: 20px;      // Tamaño del fondo
       background-size: 50% 50%; // Tamaño de la flecha dentro del fondo
       transition: background-color 0.3s ease;
     }
 
+    &:hover .carousel-control-prev-icon,
+    &:hover .carousel-control-next-icon {
+      background-color: $color-fondo-hover;
+    }
   }
 
   // 2. Cambiar el color interno de la flecha (Técnica de Máscara)
@@ -66,6 +72,10 @@ $color-fondo-hover: rgb(22, 12, 135);
     mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   }
 }
+
+
+
+
 // Fin del carrusel
 }
 
