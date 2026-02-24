@@ -233,10 +233,6 @@ body .contenedor_ppal main .inicio .carrusel #customSlider .slide-wrapper {
     width: 712px !important;
   }
 }
-body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-item .text-box p {
-  margin-top: 2em;
-  line-height: normal;
-}
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-item.active,
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-item-next,
 body .contenedor_ppal main .inicio .carrusel #customSlider .carousel-item-prev {
@@ -291,8 +287,9 @@ body .contenedor_ppal main .inicio .carrusel .carousel-control-next-icon {
 }
 body .contenedor_ppal main .inicio p {
   font-size: 14px;
-  padding: 0 2em;
+  padding: 0 1em;
   margin-top: 2em;
+  line-height: normal;
 }
 body .contenedor_ppal main .direccion {
   width: 100%;

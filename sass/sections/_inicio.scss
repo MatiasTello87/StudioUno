@@ -48,14 +48,14 @@ $h: 650px;
     }
 
   }
-  .carousel-item{
-      .text-box{
-        p{
-          margin-top: 2em;
-          line-height: normal;
-        }
-      }
-    }
+  // .carousel-item{
+  //     .text-box{
+  //       p{
+  //         margin-top: 2em;
+  //         line-height: normal;
+  //       }
+  //     }
+  //   }
   .carousel-item.active,
   .carousel-item-next,
   .carousel-item-prev {
@@ -134,7 +134,8 @@ $h: 650px;
   // Fin del carrusel
   p{
     font-size: 14px;
-    padding: 0 2em;
+    padding: 0 1em;
     margin-top: 2em;
+    line-height: normal;
   }  
 }
