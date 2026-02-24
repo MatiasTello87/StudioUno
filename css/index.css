@@ -253,7 +253,7 @@ body .contenedor_ppal main .inicio .carrusel #customSlider .slide-wrapper {
 }
 body .contenedor_ppal main .inicio .carrusel .carousel-control-prev,
 body .contenedor_ppal main .inicio .carrusel .carousel-control-next {
-  width: 1em;
+  width: 1.5em;
   background-color: transparent;
   border: none;
 }
