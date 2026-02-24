@@ -78,14 +78,13 @@ $h: 650px;
   // 1. Estilo del botón (el contenedor)
   .carousel-control-prev,
   .carousel-control-next {
-    width: 1.5em;
     background-color: transparent; // Por defecto transparente
     border: none;
     
     // Si quieres un círculo o cuadrado de color alrededor de la flecha:
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      background-color: #222222; // El color del fondo del botón
+      background-color: #1a1a1a; // El color del fondo del botón
       border-radius: 50%; // Esto lo hace circular
       padding: 20px;      // Tamaño del fondo
       background-size: 50% 50%; // Tamaño de la flecha dentro del fondo
